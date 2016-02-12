@@ -1,3 +1,11 @@
+Notes from book: "Become a ninja with Angular2."
+
+Table of content
+================
+
+-   [Reactive programming](#reactive-programming) -- [Reactive
+    programming in Angular 2](#reactive-programming-in-angular-2)
+
 Reactive programming
 --------------------
 
@@ -97,14 +105,6 @@ method can receive three parameters:
 
     // logs "hello", then "there", then "done"
 
-Notes from book: "Become a ninja with Angular2."
-
-Table of content
-================
-
-[Reactive programming](#reactive-programming) - [Reactive programming in
-Angular 2](#reactive-programming-in-angular-2)
-
 #### How to merge all md files
 
-`pandoc reactive-programming.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md reactive-programming.md note.md -f markdown -t markdown -s -o readme.md`
