@@ -3,8 +3,16 @@ Notes from book: "Become a ninja with Angular2."
 Table of content
 ================
 
--   [Reactive programming](#reactive-programming) -- [Reactive
-    programming in Angular 2](#reactive-programming-in-angular-2)
+-   [ECMAScript 6](#ecmascript6)
+
+-   [Reactive programming](#reactive-programming)
+    -   [Reactive programming in
+        Angular 2](#reactive-programming-in-angular2)
+
+ECMAScript 6
+------------
+
+TODO.
 
 Reactive programming
 --------------------
@@ -82,8 +90,8 @@ from 1 to 5 and then emit the 'completed' signal:
 
 ### Reactive programming in Angular 2
 
-The EventEmitter﻿ has a method subscribe()﻿ to react to events and this
-method can receive three parameters:
+The EventEmitter﻿ has a method `subscribe()`﻿ to react to events and
+this method can receive three parameters:
 
 -   a method to react on `events`
 -   a method to react on `errors`
@@ -107,4 +115,4 @@ method can receive three parameters:
 
 #### How to merge all md files
 
-`pandoc toc.md reactive-programming.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md es6.md reactive-programming.md note.md -f markdown -t markdown -s -o readme.md`
