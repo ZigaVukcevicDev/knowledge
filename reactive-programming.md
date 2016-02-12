@@ -67,7 +67,7 @@ Observable.range(1, 5)
 
 ### Reactive programming in Angular 2
 
-The EventEmitter﻿ has a method subscribe()﻿ to react to events and this method can receive three parameters:
+The EventEmitter﻿ has a method `subscribe()`﻿ to react to events and this method can receive three parameters:
 
 - a method to react on `events`
 - a method to react on `errors`
