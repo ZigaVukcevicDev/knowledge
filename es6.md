@@ -78,3 +78,7 @@ let httpOptions = { timeout: 2000, cache: { age: 2 } };
 let { cache: { age } } = httpOptions;
 // you now have a variable named 'age' with value 2
 ```
+
+### Default parameters and values
+
+TODO.

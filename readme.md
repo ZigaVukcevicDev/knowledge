@@ -4,7 +4,11 @@ Table of content
 ================
 
 -   [ECMAScript 6](#ecmascript-6)
-
+    -   [let](#let)
+    -   [Constants](#constants)
+    -   [Creating objects](#creating-objects)
+    -   [Destructuring assignment](#destructuring-assignment)
+    -   [Default parameters and values](#default-parameters-and-values)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
         Angular 2](#reactive-programming-in-angular2)
@@ -33,6 +37,60 @@ By using `let` the variable `name`﻿ is now restricted to its block.
       // name is not accessible here
       return pony.name;
     }
+
+### Constants
+
+When you declare a variable with const﻿, it has to be initialized and
+you can’t assign another value later.
+
+    const PONIES_IN_RACE = 6;
+
+### Creating objects
+
+Example:
+
+    function createPony() {
+      let name = 'Rainbow Dash';
+      let color = 'blue';
+      return { name: name, color: color };
+    }
+
+can be simplified to
+
+    function createPony() {
+      let name = 'Rainbow Dash';
+      let color = 'blue';
+      return { name, color };
+    }
+
+### Destructuring assignment
+
+There is now a shortcut for assigning variables from objects or arrays.
+
+In ES5:
+
+    var httpOptions = { timeout: 2000, isCache: true };
+    // later
+    var httpTimeout = httpOptions.timeout;
+    var httpCache = httpOptions.isCache;
+
+Now, in ES6, you can do:
+
+    let httpOptions = { timeout: 2000, isCache: true };
+    // later
+    let { timeout: httpTimeout, isCache: httpCache } = httpOptions;
+
+And you will have the same result. The cool thing is that it also works
+with nested objects:
+
+    let httpOptions = { timeout: 2000, cache: { age: 2 } };
+    // later
+    let { cache: { age } } = httpOptions;
+    // you now have a variable named 'age' with value 2
+
+### Default parameters and values
+
+TODO.
 
 Reactive programming
 --------------------
