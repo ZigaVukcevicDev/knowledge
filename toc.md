@@ -2,7 +2,7 @@ Notes from book: "Become a ninja with Angular2."
 
 # Table of content
 
-- [ECMAScript 6](#ecmascript6)
+- [ECMAScript 6](#ecmascript-6)
 
 
 - [Reactive programming](#reactive-programming)
