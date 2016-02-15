@@ -1,6 +1,6 @@
 ## Reactive programming
 
-It is a way to build an app using events and reacting to them, using Reactive Extensions﻿ library like RxJS (RxJava...).
+Reactive programming is a way to build an app using events and reacting to them, using Reactive Extensions﻿ library like RxJS (RxJava...). Apps have evolved to be more real-time: e.g. "likes" to some content can be reflected in real time to other connected users.
 
 `Listener` is called an `observer`﻿, and the `stream`, `an observable`﻿. A stream is an ordered sequence of events. This is well-known design pattern: the observer﻿ pattern.
 
