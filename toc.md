@@ -1,4 +1,5 @@
-Notes from book: "Become a ninja with Angular2."
+- [Become a ninja with Angular2](https://books.ninja-squad.com/angular2)
+- [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 
 # Table of content
 
