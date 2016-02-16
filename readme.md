@@ -1,6 +1,11 @@
 Notes from resources:
-    - [Become a ninja with Angular2](https://books.ninja-squad.com/angular2)
-    - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+
+-   [Become a ninja with
+    Angular2](https://books.ninja-squad.com/angular2)
+-   [The introduction to Reactive Programming you've been
+    missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+-   [Taking advantage of Observables in Angular
+    2](http://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html)
 
 Table of content
 ================
@@ -97,8 +102,10 @@ TODO.
 Reactive programming
 --------------------
 
-It is a way to build an app using events and reacting to them, using
-Reactive Extensions﻿ library like RxJS (RxJava...).
+Reactive programming is a way to build an app using events and reacting
+to them, using Reactive Extensions﻿ library like RxJS (RxJava...). Apps
+have evolved to be more real-time: e.g. "likes" to some content can be
+reflected in real time to other connected users.
 
 `Listener` is called an `observer`﻿, and the `stream`, `an observable`﻿.
 A stream is an ordered sequence of events. This is well-known design
