@@ -82,3 +82,38 @@ let { cache: { age } } = httpOptions;
 ### Default parameters and values
 
 TODO.
+
+### Promises
+
+The Promise object is used for deferred (postponed) and asynchronous computations. A Promise represents an operation that hasn't completed yet, but is expected in the future.
+
+A Promise is in one of these states:
+
+- `pending`: initial state, not fulfilled or rejected.
+- `fulfilled`: meaning that the operation completed successfully.
+- `rejected`: meaning that the operation failed.
+
+```
+let promise = new Promise(function(resolve, reject) {
+  // do something
+
+  if (true) {
+    resolve('It worked!');
+  }
+  else {
+    reject('An error.'));
+  }
+});
+```
+
+Here's how you use that promise:
+
+```
+promise
+  .then(function(result) {
+    console.log(result); // 'It worked!'
+  })
+  .catch(function(err) {
+    console.log(err); // 'An error.'
+  });
+``
