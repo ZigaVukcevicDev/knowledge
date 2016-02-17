@@ -133,85 +133,112 @@ Here's how you use that promise:
 
     promise
       .then(function(result) {
-        console.log(result); // 'It worked!'
+        console.log(result); // It worked!
       })
       .catch(function(err) {
-        console.log(err); // 'An error.'
+        console.log(err); // An error.
       });
-    ``
 
-    ## Reactive programming
+Reactive programming
+--------------------
 
-    Reactive programming is a way to build an app using events and reacting to them, using Reactive Extensions﻿ library like RxJS (RxJava...). Apps have evolved to be more real-time: e.g. "likes" to some content can be reflected in real time to other connected users.
+Reactive programming is a way to build an app using events and reacting
+to them, using Reactive Extensions﻿ library like RxJS (RxJava...). Apps
+have evolved to be more real-time: e.g. "likes" to some content can be
+reflected in real time to other connected users.
 
-    `Listener` is called an `observer`﻿, and the `stream`, `an observable`﻿. A stream is an ordered sequence of events. This is well-known design pattern: the observer﻿ pattern.
+`Listener` is called an `observer`﻿, and the `stream`, `an observable`﻿.
+A stream is an ordered sequence of events. This is well-known design
+pattern: the observer﻿ pattern.
 
-    Observables are very close to arrays. An array is a collection of values, like an observable. An observable only adds the concept of values over time: in an array, you have all the values at once, while the values will come over time in an observable, maybe every few minutes.
+Observables are very close to arrays. An array is a collection of
+values, like an observable. An observable only adds the concept of
+values over time: in an array, you have all the values at once, while
+the values will come over time in an observable, maybe every few
+minutes.
 
-    Every observable, just like every array, can be transformed:
+Every observable, just like every array, can be transformed:
 
-    - `take(n)`﻿ will pick the n first events
-    - `map(fn)`﻿ will apply fn﻿ to each event and return the result
-    - `filter(predicate)`﻿ will only let through the events that fulfill the predicate
-    - `reduce(fn)`﻿ will apply fn﻿ to every event to reduce the stream to a single value
-    - `merge(s1, s2)`﻿ will merge the streams
-    - `subscribe(fn)`﻿ will apply fn﻿ to each event it receives
-    - and much more...
+-   `take(n)`﻿ will pick the n first events
+-   `map(fn)`﻿ will apply fn﻿ to each event and return the result
+-   `filter(predicate)`﻿ will only let through the events that fulfill
+    the predicate
+-   `reduce(fn)`﻿ will apply fn﻿ to every event to reduce the stream to
+    a single value
+-   `merge(s1, s2)`﻿ will merge the streams
+-   `subscribe(fn)`﻿ will apply fn﻿ to each event it receives
+-   and much more...
 
-\[1, 2, 3, 4, 5\] .map(x =&gt; x \* 2) .filter(x =&gt; x &gt; 5)
-.forEach(x =&gt; console.log(x)); // 6, 8, 10
+<!-- -->
 
+    [1, 2, 3, 4, 5]
+      .map(x => x * 2)
+      .filter(x => x > 5)
+      .forEach(x => console.log(x)); // 6, 8, 10
 
-    RxJS let us build an observable from an array.
+RxJS let us build an observable from an array.
 
-Observable.fromArray(\[1, 2, 3, 4, 5\]) .map(x =&gt; x \* 2) .filter(x
-=&gt; x &gt; 5) .subscribe(x =&gt; console.log(x)); // 6, 8, 10
+    Observable.fromArray([1, 2, 3, 4, 5])
+      .map(x => x * 2)
+      .filter(x => x > 5)
+      .subscribe(x => console.log(x)); // 6, 8, 10
 
+But an observable is more than a collection. It is an asynchronous
+collection, where the events arrive over time.
 
-    But an observable is more than a collection. It is an asynchronous collection, where the events arrive over time.
+    let input = $('input');
 
-let input = \$('input');
+    Observable.fromEvent(input, 'keyup')
+      .subscribe(() => console.log('keyup!'));
 
-Observable.fromEvent(input, 'keyup') .subscribe(() =&gt;
-console.log('keyup!'));
+      input.trigger('keyup'); // logs "keyup!"
+      input.trigger('keyup'); // logs "keyup!"
 
-input.trigger('keyup'); // logs "keyup!" input.trigger('keyup'); // logs
-"keyup!"
+You can build observables from AJAX requests, browser events, Web
+sockets responses, a promise, whatever you can think of.
 
+Observable.create﻿ takes a function that will emit events on the
+observer﻿ given as parameter. Here it simply emits one event for the
+demonstration.
 
-    You can build observables from AJAX requests, browser events, Web sockets responses, a promise, whatever you can think of.
+    let observable = Observable.create((observer) => observer.next('hello'));
 
-    Observable.create﻿ takes a function that will emit events on the observer﻿ given as parameter. Here it simply emits one event for the demonstration.
+    observable.subscribe((value) => console.log(value));
+    // logs "hello"
 
-let observable = Observable.create((observer) =&gt;
-observer.next('hello'));
+Here, the range﻿ method we are using to create the events will iterate
+from 1 to 5 and then emit the 'completed' signal:
 
-observable.subscribe((value) =&gt; console.log(value)); // logs "hello"
+    Observable.range(1, 5)
+      .map(x => x * 2)
+      .filter(x => x > 5)
+      .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
+    // 6, 8, 10, done
 
+### Reactive programming in Angular 2
 
-    Here, the range﻿ method we are using to create the events will iterate from 1 to 5 and then emit the 'completed' signal:
+The EventEmitter﻿ has a method `subscribe()`﻿ to react to events and
+this method can receive three parameters:
 
-Observable.range(1, 5) .map(x =&gt; x \* 2) .filter(x =&gt; x &gt; 5)
-.subscribe(x =&gt; console.log(x), error =&gt; console.log(error), ()
-=&gt; console.log('done')); // 6, 8, 10, done
+-   a method to react on `events`
+-   a method to react on `errors`
+-   a method to react on `completion`
 
+<!-- -->
 
-    ### Reactive programming in Angular 2
+    let emitter = new EventEmitter();
 
-    The EventEmitter﻿ has a method `subscribe()`﻿ to react to events and this method can receive three parameters:
+    emitter.subscribe(
+      value => console.log(value),
+      error => console.log(error),
+      () => console.log('done')
+    );
 
-    - a method to react on `events`
-    - a method to react on `errors`
-    - a method to react on `completion`
+    emitter.emit('hello');
+    emitter.emit('there');
+    emitter.complete();
 
-let emitter = new EventEmitter();
-
-emitter.subscribe( value =&gt; console.log(value), error =&gt;
-console.log(error), () =&gt; console.log('done') );
-
-emitter.emit('hello'); emitter.emit('there'); emitter.complete();
-
-// logs "hello", then "there", then "done" \`\`\`
+    // logs "hello", then "there", then "done"
 
 #### How to merge all md files
 
