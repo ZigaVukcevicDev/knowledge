@@ -242,7 +242,7 @@ this method can receive three parameters:
     // logs "hello", then "there", then "done"
 
 JSON Web Token
-==============
+--------------
 
 TODO: http://jwt.io/introduction/
 
