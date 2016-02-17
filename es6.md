@@ -111,11 +111,9 @@ Here's how you use that promise:
 ```
 promise
   .then(function(result) {
-    console.log(result); // 'It worked!'
+    console.log(result); // It worked!
   })
   .catch(function(err) {
-    console.log(err); // 'An error.'
+    console.log(err); // An error.
   });
 ```
-
-This should be a new line.
