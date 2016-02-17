@@ -24,6 +24,7 @@ Table of content
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
         Angular 2](#reactive-programming-in-angular2)
+-   [JSON Web Token](#json-web-token)
 
 ECMAScript 6
 ------------
@@ -240,6 +241,11 @@ this method can receive three parameters:
 
     // logs "hello", then "there", then "done"
 
+JSON Web Token
+==============
+
+TODO: http://jwt.io/introduction/
+
 #### How to merge all md files
 
-`pandoc toc.md es6.md reactive-programming.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md es6.md reactive-programming.md jwt.md note.md -f markdown -t markdown -s -o readme.md`
