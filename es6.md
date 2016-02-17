@@ -117,4 +117,5 @@ promise
     console.log(err); // 'An error.'
   });
 ```
-test
+
+This should be a new line.
