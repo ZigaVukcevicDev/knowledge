@@ -116,4 +116,4 @@ promise
   .catch(function(err) {
     console.log(err); // 'An error.'
   });
-``
+```
