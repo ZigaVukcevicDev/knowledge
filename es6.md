@@ -117,3 +117,38 @@ promise
     console.log(err); // An error.
   });
 ```
+
+### Arrow functions
+
+The new arrow function syntax is the 'fat arrow' operator (⇒﻿). It is useful for callbacks and anonymous functions.
+
+In ES5:
+
+```
+getUser(login)
+  .then(function(user) {
+    return getRights(user);
+  })
+  .then(function(rights) {
+    return updateMenu(rights);
+  })
+```
+
+Using 'fat arrow' operator in ES6:
+
+```
+getUser(login)
+  .then(user => getRights(user))
+  .then(rights => updateMenu(rights))
+```
+
+No need to write user ⇒ return getRights(user)﻿. But if we did have a block, we would need the explicit return:
+
+```
+getUser(login)
+  .then(user => {
+    console.log(user);
+    return getRights(user);
+  })
+  .then(rights => updateMenu(rights))
+```
