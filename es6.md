@@ -152,3 +152,15 @@ getUser(login)
   })
   .then(rights => updateMenu(rights))
 ```
+
+### Sets and Maps
+
+// @TODO
+
+### Template literals
+
+// @TODO
+
+### Modules
+
+// @TODO

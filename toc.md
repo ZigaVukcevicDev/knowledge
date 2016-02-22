@@ -16,6 +16,11 @@ Notes from resources:
     - [Destructuring assignment](#destructuring-assignment)
     - [Default parameters and values](#default-parameters-and-values)
     - [Promises](#promises)
+    - [Arrow functions](#arrow-functions)
+    - [Sets and Maps](#sets-and-maps)
+    - [Template literals](#template-literals)
+    - [Modules](#modules)
+
 
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
