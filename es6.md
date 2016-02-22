@@ -81,7 +81,7 @@ let { cache: { age } } = httpOptions;
 
 ### Default parameters and values
 
-TODO.
+// @TODO
 
 ### Promises
 

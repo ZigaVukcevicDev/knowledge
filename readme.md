@@ -108,7 +108,7 @@ with nested objects:
 
 ### Default parameters and values
 
-TODO.
+// @TODO
 
 ### Promises
 
