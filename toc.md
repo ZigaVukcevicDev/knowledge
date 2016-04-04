@@ -26,7 +26,7 @@ Notes from resources:
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
 
-- [Angular 2](#angular2)
+- [Angular 2](#angular-2)
     - [Components and directives](#components-and-directives)
 
 - [JSON Web Token](#json-web-token)
