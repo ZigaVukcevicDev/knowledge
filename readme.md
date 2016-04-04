@@ -10,6 +10,8 @@ Notes from resources:
     again](http://www.html5rocks.com/en/tutorials/es6/promises/)
 -   [Mozilla Developer
     Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Difference between component and directive in Angular
+    2](http://www.codeandyou.com/2016/01/difference-between-component-and-directive-in-Angular2.html)
 -   [JSON Web Token introduction](https://jwt.io/introduction/)
 
 Table of content
