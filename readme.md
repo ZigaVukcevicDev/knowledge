@@ -34,6 +34,7 @@ Table of content
 -   [Angular 2](#angular-2)
     -   [Components and directives](#components-and-directives)
     -   [ViewEncapsulation](#viewencapsulation)
+    -   [HostListener](#hostlistener)
 -   [JSON Web Token](#json-web-token)
 
 ECMAScript 6
@@ -367,6 +368,19 @@ to write reusable behaviour to supplement existing DOM elements.
 
 // TODO: read this
 https://toddmotto.com/emulated-native-shadow-dom-angular-2-view-encapsulation
+
+### HostListener
+
+Angular provides an easy way to listen to events on `window` or
+`document`. Regular way `window.onScoll` will not work - it's because
+the window object is instantiated outside Angular.
+
+    @HostListener('window:scroll', ['$event'])
+    onScroll(event) {
+      if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        console.log('Bottom of page');
+      }
+    }
 
 JSON Web Token
 --------------

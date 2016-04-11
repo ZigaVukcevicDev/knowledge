@@ -29,5 +29,6 @@ Notes from resources:
 - [Angular 2](#angular-2)
     - [Components and directives](#components-and-directives)
     - [ViewEncapsulation](#viewencapsulation)
+    - [HostListener](#hostlistener)
 
 - [JSON Web Token](#json-web-token)
