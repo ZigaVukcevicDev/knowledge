@@ -28,6 +28,8 @@ Table of content
     -   [Sets and Maps](#sets-and-maps)
     -   [Template literals](#template-literals)
     -   [Modules](#modules)
+-   [TypeScript](#typescript)
+
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
         Angular 2](#reactive-programming-in-angular2)
@@ -191,6 +193,11 @@ block, we would need the explicit return:
 // @TODO
 
 ### Modules
+
+// @TODO
+
+TypeScript
+----------
 
 // @TODO
 
@@ -462,4 +469,4 @@ Sample of encoded JWT:
 
 #### How to merge all md files
 
-`pandoc toc.md es6.md reactive-programming.md angular2.md jwt.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md es6.md typescript.md reactive-programming.md angular2.md jwt.md note.md -f markdown -t markdown -s -o readme.md`
