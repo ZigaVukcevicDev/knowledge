@@ -341,19 +341,18 @@ Angular 2
     import { Directive } from 'angular2/angular2';
 
     @Directive({
-        selector: '[myDirective]',
-        hostListeners: {
-          'click': 'showMessage()'
-        }
+      selector: '[myDirective]',
+      hostListeners: {
+        'click': 'showMessage()'
+      }
     })
 
     class Message {
+      constructor() {}
 
-        constructor() {}
-
-        showMessage() {
-          console.log('Hello Directive');
-        }
+      showMessage() {
+        console.log('Hello Directive');
+      }
     }
 
     <button myDirective>Click here</button>
@@ -375,10 +374,14 @@ Angular provides an easy way to listen to events on `window` or
 `document`. Regular way `window.onScoll` will not work - it's because
 the window object is instantiated outside Angular.
 
-    @HostListener('window:scroll', ['$event'])
-    onScroll(event) {
-      if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        console.log('Bottom of page');
+    import { HostListener } from 'angular2/core';
+
+    class SomeClass {
+      @HostListener('window:scroll', ['$event'])
+      onScroll(event) {
+        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+          console.log('Bottom of page');
+        }
       }
     }
 
