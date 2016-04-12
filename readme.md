@@ -31,7 +31,6 @@ Table of content
     -   [Template literals](#template-literals)
     -   [Modules](#modules)
 -   [TypeScript](#typescript)
-
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
         Angular 2](#reactive-programming-in-angular2)
