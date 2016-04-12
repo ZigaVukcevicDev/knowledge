@@ -20,29 +20,26 @@ Table of content
 ================
 
 -   [ECMAScript 6](#ecmascript-6)
--   [let](#let)
--   [Constants](#constants)
--   [Creating objects](#creating-objects)
--   [Destructuring assignment](#destructuring-assignment)
--   [Default parameters and values](#default-parameters-and-values)
--   [Promises](#promises)
--   [Arrow functions](#arrow-functions)
--   [Sets and Maps](#sets-and-maps)
--   [Template literals](#template-literals)
--   [Modules](#modules)
-
+    -   [let](#let)
+    -   [Constants](#constants)
+    -   [Creating objects](#creating-objects)
+    -   [Destructuring assignment](#destructuring-assignment)
+    -   [Default parameters and values](#default-parameters-and-values)
+    -   [Promises](#promises)
+    -   [Arrow functions](#arrow-functions)
+    -   [Sets and Maps](#sets-and-maps)
+    -   [Template literals](#template-literals)
+    -   [Modules](#modules)
 -   [TypeScript](#typescript)
 
 -   [Reactive programming](#reactive-programming)
--   [Reactive programming in
-    Angular 2](#reactive-programming-in-angular2)
--   [Subject](#subject)
-
+    -   [Reactive programming in
+        Angular 2](#reactive-programming-in-angular2)
+    -   [Subject](#subject)
 -   [Angular 2](#angular-2)
--   [Components and directives](#components-and-directives)
--   [ViewEncapsulation](#viewencapsulation)
--   [HostListener](#hostlistener)
-
+    -   [Components and directives](#components-and-directives)
+    -   [ViewEncapsulation](#viewencapsulation)
+    -   [HostListener](#hostlistener)
 -   [JSON Web Token](#json-web-token)
 
 ECMAScript 6
