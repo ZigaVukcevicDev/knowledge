@@ -88,3 +88,18 @@ emitter.complete();
 
 // logs "hello", then "there", then "done"
 ```
+
+### Subject
+
+A `Subject` is a sort of bridge that is available in some implementations of ReactiveX that acts both as an `observer` and as an `Observable`. Because it is an observer, it can subscribe to one or more Observables, and because it is an Observable, it can pass through the items it observes by reemitting them, and it can also emit new items.
+
+```
+spinner$: Subject<boolean> = new Subject();
+spinner: boolean = false;
+
+this.spinner$.next(this.spinner);
+
+this.spinner$.subscribe((spinner) => {
+  console.log(spinner); // should output false
+});
+```

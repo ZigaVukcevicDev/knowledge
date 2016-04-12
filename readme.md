@@ -20,25 +20,29 @@ Table of content
 ================
 
 -   [ECMAScript 6](#ecmascript-6)
-    -   [let](#let)
-    -   [Constants](#constants)
-    -   [Creating objects](#creating-objects)
-    -   [Destructuring assignment](#destructuring-assignment)
-    -   [Default parameters and values](#default-parameters-and-values)
-    -   [Promises](#promises)
-    -   [Arrow functions](#arrow-functions)
-    -   [Sets and Maps](#sets-and-maps)
-    -   [Template literals](#template-literals)
-    -   [Modules](#modules)
+-   [let](#let)
+-   [Constants](#constants)
+-   [Creating objects](#creating-objects)
+-   [Destructuring assignment](#destructuring-assignment)
+-   [Default parameters and values](#default-parameters-and-values)
+-   [Promises](#promises)
+-   [Arrow functions](#arrow-functions)
+-   [Sets and Maps](#sets-and-maps)
+-   [Template literals](#template-literals)
+-   [Modules](#modules)
+
 -   [TypeScript](#typescript)
 
 -   [Reactive programming](#reactive-programming)
-    -   [Reactive programming in
-        Angular 2](#reactive-programming-in-angular2)
+-   [Reactive programming in
+    Angular 2](#reactive-programming-in-angular2)
+-   [Subject](#subject)
+
 -   [Angular 2](#angular-2)
-    -   [Components and directives](#components-and-directives)
-    -   [ViewEncapsulation](#viewencapsulation)
-    -   [HostListener](#hostlistener)
+-   [Components and directives](#components-and-directives)
+-   [ViewEncapsulation](#viewencapsulation)
+-   [HostListener](#hostlistener)
+
 -   [JSON Web Token](#json-web-token)
 
 ECMAScript 6
@@ -340,6 +344,23 @@ this method can receive three parameters:
     emitter.complete();
 
     // logs "hello", then "there", then "done"
+
+### Subject
+
+A `Subject` is a sort of bridge that is available in some
+implementations of ReactiveX that acts both as an `observer` and as an
+`Observable`. Because it is an observer, it can subscribe to one or more
+Observables, and because it is an Observable, it can pass through the
+items it observes by reemitting them, and it can also emit new items.
+
+    spinner$: Subject<boolean> = new Subject();
+    spinner: boolean = false;
+
+    this.spinner$.next(this.spinner);
+
+    this.spinner$.subscribe((spinner) => {
+      console.log(spinner); // should output false
+    });
 
 Angular 2
 ---------
