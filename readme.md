@@ -199,10 +199,10 @@ block, we would need the explicit return:
 
 // @TODO
 
-### React
+React
+-----
 
-JSX
----
+### JSX
 
 // @TODO
 
