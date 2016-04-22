@@ -22,6 +22,7 @@ Notes from resources:
     - [Sets and Maps](#sets-and-maps)
     - [Template literals](#template-literals)
     - [Modules](#modules)
+- [React](#react)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
