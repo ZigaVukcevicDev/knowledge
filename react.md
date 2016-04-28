@@ -37,7 +37,9 @@ let HelloWorld = React.createClass({
 React.render(
   <div>
     <Hello World text="Hello World" />
-    <Hello World>This is some text</Hello World>
+    <Hello World>
+      This is some text
+    </Hello World>
   </div>
   , document.getElementById('some-container'));
 ```
