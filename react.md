@@ -41,5 +41,6 @@ React.render(
       This is some text
     </Hello World>
   </div>
-  , document.getElementById('some-container'));
+  , document.getElementById('some-container')
+);
 ```

@@ -15,6 +15,7 @@ Notes from resources:
 -   [JSON Web Token introduction](https://jwt.io/introduction/)
 -   [TypeScript Deep
     Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
+-   [@use JSDoc](http://usejsdoc.org/)
 
 Table of content
 ================
@@ -41,6 +42,30 @@ Table of content
     -   [ViewEncapsulation](#viewencapsulation)
     -   [HostListener](#hostlistener)
 -   [JSON Web Token](#json-web-token)
+
+Code commenting
+---------------
+
+### Class
+
+    /** Class representing a point. */
+    class Point {
+        /**
+         * Create a point.
+         * @param {number} x - The x value.
+         * @param {number} y - The y value.
+         */
+        constructor(x, y) {
+            // ...
+        }
+
+        /**
+         * Get the x value.
+         * @return {number} The x value.
+         */
+        getX() {
+            // ...
+        }
 
 ECMAScript 6
 ------------
@@ -239,7 +264,8 @@ This is sample of using `props`.
           This is some text
         </Hello World>
       </div>
-      , document.getElementById('some-container'));
+      , document.getElementById('some-container')
+    );
 
 TypeScript
 ----------
@@ -568,4 +594,4 @@ Sample of encoded JWT:
 
 #### How to merge all md files
 
-`pandoc toc.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md note.md -f markdown -t markdown -s -o readme.md`

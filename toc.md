@@ -8,6 +8,7 @@ Notes from resources:
 - [Difference between component and directive in Angular 2](http://www.codeandyou.com/2016/01/difference-between-component-and-directive-in-Angular2.html)
 - [JSON Web Token introduction](https://jwt.io/introduction/)
 - [TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
+- [@use JSDoc](http://usejsdoc.org/)
 
 # Table of content
 
