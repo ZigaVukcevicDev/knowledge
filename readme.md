@@ -20,6 +20,8 @@ Notes from resources:
 Table of content
 ================
 
+-   [Code commenting](#code-commenting)
+    -   [class](#class)
 -   [ECMAScript 6](#ecmascript-6)
     -   [let](#let)
     -   [Constants](#constants)
