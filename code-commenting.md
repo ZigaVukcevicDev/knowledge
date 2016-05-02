@@ -7,6 +7,7 @@
 class Point {
     /**
      * Create a point.
+     *
      * @param {number} x - The x value.
      * @param {number} y - The y value.
      */
@@ -16,6 +17,7 @@ class Point {
 
     /**
      * Get the x value.
+     *
      * @return {number} The x value.
      */
     getX() {
