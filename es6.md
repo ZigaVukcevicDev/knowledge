@@ -7,7 +7,7 @@ A `transpiler` takes ES6 source code and generates ES5 code that can run in ever
 
 ### Template literals
 
-By using `back-tick`you can use variables withing string.
+By using `back-tick` you can use variables withing string.
 
 ```
 `${variable} and lorem ipsum.`

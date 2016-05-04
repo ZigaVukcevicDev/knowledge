@@ -23,6 +23,7 @@ Table of content
 -   [Code commenting](#code-commenting)
     -   [class](#class)
 -   [ECMAScript 6](#ecmascript-6)
+    -   [Template literals](#template-literals)
     -   [let](#let)
     -   [Constants](#constants)
     -   [Creating objects](#creating-objects)
@@ -81,7 +82,7 @@ in every browser - e.g. Traceur or Babeljs.
 
 ### Template literals
 
-By using `back-tick`you can use variables withing string.
+By using `back-tick` you can use variables withing string.
 
     `${variable} and lorem ipsum.`
 

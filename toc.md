@@ -15,6 +15,7 @@ Notes from resources:
 - [Code commenting](#code-commenting)
     - [class](#class)
 - [ECMAScript 6](#ecmascript-6)
+    - [Template literals](#template-literals)
     - [let](#let)
     - [Constants](#constants)
     - [Creating objects](#creating-objects)
