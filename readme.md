@@ -35,6 +35,10 @@ Table of content
     -   [Template literals](#template-literals)
     -   [Modules](#modules)
 -   [React](#react)
+    -   [JSX](#jsx)
+    -   [Properties](#properties)
+    -   [Events](#events)
+    -   [State](#state)
 -   [TypeScript](#typescript)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
@@ -269,8 +273,8 @@ This is sample of using `props`.
       render: () => {
         return
           <div>
-            <h1>{ this.props.text }</h1>
-            <p>{ this.props.children }</p>
+            <h1>{this.props.text}</h1>
+            <p>{this.props.children}</p>
           </div>
       }
     });
@@ -284,6 +288,14 @@ This is sample of using `props`.
       </div>
       , document.getElementById('some-container')
     );
+
+### Events
+
+// @TODO
+
+### State
+
+// @TODO
 
 TypeScript
 ----------

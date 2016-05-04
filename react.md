@@ -28,8 +28,8 @@ let HelloWorld = React.createClass({
   render: () => {
     return
       <div>
-        <h1>{ this.props.text }</h1>
-        <p>{ this.props.children }</p>
+        <h1>{this.props.text}</h1>
+        <p>{this.props.children}</p>
       </div>
   }
 });
@@ -44,3 +44,11 @@ React.render(
   , document.getElementById('some-container')
 );
 ```
+
+### Events
+
+// @TODO
+
+### State
+
+// @TODO
