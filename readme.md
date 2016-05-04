@@ -82,7 +82,7 @@ in every browser - e.g. Traceur or Babeljs.
 
 ### Template literals
 
-By using `back-tick` you can use variables withing string.
+By using `back-tick` you can use variables with strings.
 
     `${variable} and lorem ipsum.`
 
