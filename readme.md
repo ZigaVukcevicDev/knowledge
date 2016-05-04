@@ -71,11 +71,24 @@ Code commenting
             // ...
         }
 
+// TODO: check this samples: http://webapplog.com/es6/
+
 ECMAScript 6
 ------------
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run
 in every browser - e.g. Traceur or Babeljs.
+
+### Template literals
+
+By using `back-tick`you can use variables withing string.
+
+    `${variable} and lorem ipsum.`
+
+Or even write multi line text.
+
+    `Lorem ipsum
+    and another line.`
 
 ### let
 
