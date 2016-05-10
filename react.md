@@ -45,6 +45,24 @@ React.render(
 );
 ```
 
+#### Types of properties
+
+Example of determining types.
+
+```
+    propTypes = {
+        propFunction: React.PropTypes.func,
+        propObject: React.PropTypes.object,
+        propWithinObject: React.PropTypes.shape({
+            sampleProp: React.PropTypes.oneOfType([
+                React.PropTypes.number,
+                React.PropTypes.string
+            ]).isRequired,
+            anotherSampleProp: React.PropTypes.isRequired
+        }).isRequired
+    };
+```
+
 ### Events
 
 // @TODO
