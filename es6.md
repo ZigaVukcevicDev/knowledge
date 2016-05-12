@@ -5,6 +5,10 @@
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
+### Export and import
+
+ // TODO
+
 ### Template literals
 
 By using `back-tick` you can use variables with strings.
