@@ -3,6 +3,7 @@
 - [Code commenting](#code-commenting)
     - [class](#class)
 - [ECMAScript 6](#ecmascript-6)
+    - [Import and export](import-and-export)
     - [Template literals](#template-literals)
     - [let](#let)
     - [Constants](#constants)

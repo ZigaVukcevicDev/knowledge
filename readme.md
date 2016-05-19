@@ -4,6 +4,7 @@ Table of content
 -   [Code commenting](#code-commenting)
     -   [class](#class)
 -   [ECMAScript 6](#ecmascript-6)
+    -   [Import and export](import-and-export)
     -   [Template literals](#template-literals)
     -   [let](#let)
     -   [Constants](#constants)
@@ -58,7 +59,21 @@ ECMAScript 6
 A `transpiler` takes ES6 source code and generates ES5 code that can run
 in every browser - e.g. Traceur or Babeljs.
 
-### Export and import
+### Import and export
+
+#### Import
+
+// TODO
+
+import defaultMember from "module-name"; import \* as name from
+"module-name"; import { member } from "module-name"; import { member as
+alias } from "module-name"; import { member1 , member2 } from
+"module-name"; import { member1 , member2 as alias2 , \[...\] } from
+"module-name"; import defaultMember, { member \[ , \[...\] \] } from
+"module-name"; import defaultMember, \* as name from "module-name";
+import "module-name";
+
+#### Export
 
 // TODO
 
@@ -615,6 +630,26 @@ says it is and to ensure that the message was't changed in the way.
 Sample of encoded JWT:
 
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
+
+Resources
+---------
+
+-   [Become a ninja with
+    Angular2](https://books.ninja-squad.com/angular2)
+-   [The introduction to Reactive Programming you've been
+    missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+-   [Taking advantage of Observables in Angular
+    2](http://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html)
+-   [JavaScript Promises, There and back
+    again](http://www.html5rocks.com/en/tutorials/es6/promises/)
+-   [Mozilla Developer
+    Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Difference between component and directive in Angular
+    2](http://www.codeandyou.com/2016/01/difference-between-component-and-directive-in-Angular2.html)
+-   [JSON Web Token introduction](https://jwt.io/introduction/)
+-   [TypeScript Deep
+    Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
+-   [@use JSDoc](http://usejsdoc.org/)
 
 #### How to merge all md files
 

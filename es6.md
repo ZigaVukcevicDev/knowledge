@@ -5,9 +5,25 @@
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
-### Export and import
+### Import and export
 
- // TODO
+#### Import
+
+// TODO
+
+import defaultMember from "module-name";
+import * as name from "module-name";
+import { member } from "module-name";
+import { member as alias } from "module-name";
+import { member1 , member2 } from "module-name";
+import { member1 , member2 as alias2 , [...] } from "module-name";
+import defaultMember, { member [ , [...] ] } from "module-name";
+import defaultMember, * as name from "module-name";
+import "module-name";
+
+#### Export
+
+// TODO
 
 ### Template literals
 
