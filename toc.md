@@ -20,6 +20,7 @@
     - [Properties](#properties)
     - [Events](#events)
     - [State](#state)
+    - [Bind This](#bind-this)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)

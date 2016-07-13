@@ -10,3 +10,4 @@
 - [JSON Web Token introduction](https://jwt.io/introduction/)
 - [TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
 - [@use JSDoc](http://usejsdoc.org/)
+- [6 Ways to Bind JavaScript&#039;s this Keyword in React, ES6 &amp; ES7](https://www.sitepoint.com/bind-javascripts-this-keyword-react/)

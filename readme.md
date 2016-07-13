@@ -21,6 +21,7 @@ Table of content
     -   [Properties](#properties)
     -   [Events](#events)
     -   [State](#state)
+    -   [Bind This](#bind-this)
 -   [TypeScript](#typescript)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
@@ -316,6 +317,60 @@ Example of determining types.
 ### State
 
 // @TODO
+
+### Bind this
+
+It’s not always clear what `this` is going to refer to in your code.
+Samples:
+
+1.  Alias This
+
+<!-- -->
+
+        var component = this;
+        component.setState({ loading: true });
+
+        fetch('/').then(function loaded() {
+            component.setState({ loading: false });
+        });
+
+2.  Bind This
+
+<!-- -->
+
+        this.setState({ loading: true });
+
+        fetch('/').then(function loaded() {
+            this.setState({ loading: false });
+        }.bind(this));
+
+3.  React Component Methods
+
+React allows you to define arbitrary methods on your component classes
+and these methods are automatically bound with the correct context for
+`this when you create your components with`React.createClass. This
+allows you move your callback code out onto your component.
+
+    React.createClass({
+      componentWillMount: function() {
+        this.setState({ loading: true });
+
+        fetch('/').then(this.loaded);
+      },
+      loaded: function loaded() {
+        this.setState({ loading: false });
+      }
+    });
+
+4.  ES2015 Arrows
+
+They always use the value of `this` from the enclosing scope.
+
+        this.setState({ loading: true });
+
+        fetch('/').then(() => {
+            this.setState({ loading: false });
+        });
 
 TypeScript
 ----------
@@ -661,6 +716,8 @@ Resources
 -   [TypeScript Deep
     Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
 -   [@use JSDoc](http://usejsdoc.org/)
+-   [6 Ways to Bind JavaScript's this Keyword in React, ES6 &
+    ES7](https://www.sitepoint.com/bind-javascripts-this-keyword-react/)
 
 #### How to merge all md files
 
