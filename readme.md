@@ -3,6 +3,9 @@ Table of content
 
 -   [Code commenting](#code-commenting)
     -   [class](#class)
+-   [JavaScript](#javascript)
+    -   [Event listening and
+        dispatching](#event-listening-and-dispatching)
 -   [ECMAScript 6](#ecmascript-6)
     -   [Import and export](#import-and-export)
     -   [Template literals](#template-literals)
@@ -51,6 +54,15 @@ Code commenting
         constructor(x, y) {
             // ...
         }
+
+JavaScript
+----------
+
+### Event listening and dispatching
+
+// TODO
+https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating\_and\_triggering\_events
 
 // TODO: check this samples: http://webapplog.com/es6/
 
@@ -717,4 +729,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md resources.md note.md -f markdown -t markdown -s -o readme.md`

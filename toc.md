@@ -2,6 +2,8 @@
 
 - [Code commenting](#code-commenting)
     - [class](#class)
+- [JavaScript](#javascript)
+    - [Event listening and dispatching](#event-listening-and-dispatching)
 - [ECMAScript 6](#ecmascript-6)
     - [Import and export](#import-and-export)
     - [Template literals](#template-literals)
