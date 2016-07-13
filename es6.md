@@ -1,7 +1,6 @@
-// TODO: check this samples: http://webapplog.com/es6/
-
-
 ## ECMAScript 6
+
+// TODO: check this samples: http://webapplog.com/es6/
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
