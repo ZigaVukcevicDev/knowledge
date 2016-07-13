@@ -323,7 +323,7 @@ Example of determining types.
 It’s not always clear what `this` is going to refer to in your code.
 Samples:
 
-Alias This
+#### Alias This
 
         var component = this;
         component.setState({ loading: true });
@@ -332,7 +332,7 @@ Alias This
             component.setState({ loading: false });
         });
 
-Bind This
+#### Bind This
 
         this.setState({ loading: true });
 
@@ -340,7 +340,7 @@ Bind This
             this.setState({ loading: false });
         }.bind(this));
 
-React Component Methods
+#### React Component Methods
 
 React allows you to define arbitrary methods on your component classes
 and these methods are automatically bound with the correct context for
@@ -358,7 +358,7 @@ allows you move your callback code out onto your component.
       }
     });
 
-ES2015 Arrows
+#### ES2015 Arrows
 
 They always use the value of `this` from the enclosing scope.
 
