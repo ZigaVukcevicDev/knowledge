@@ -73,7 +73,7 @@ Example of determining types.
 
 ### Bind this
 
-It’s not always clear what `this` is going to refer to in your code. Samples:
+It’s not always clear what `this` is going to refer to in your code. As functions in JS are objects, every function has it own `this`. Samples:
 
 #### Alias This
 
