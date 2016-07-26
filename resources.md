@@ -11,3 +11,4 @@
 - [TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html)
 - [@use JSDoc](http://usejsdoc.org/)
 - [6 Ways to Bind JavaScript&#039;s this Keyword in React, ES6 &amp; ES7](https://www.sitepoint.com/bind-javascripts-this-keyword-react/)
+- [Decoupling JavaScript applications using the Publish/Subscribe pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)

@@ -28,7 +28,7 @@ Provides an update interface for objects that need to be notified of a Subject's
 
 ### Publish / subscribe
 
-This pattern uses an event system that sits between the objects wishing to receive notifications (subscribers) and the objects firing the events (the publishers). The goal is to avoid dependencies between the subscriber and the publisher (decoupling).
+This pattern uses an `event system` that sits between the objects wishing to receive notifications (`subscribers`) and the objects firing the events (`publishers`).
 
 ```
 class PublishSubscribe {
@@ -55,7 +55,7 @@ class PublishSubscribe {
         }
 
         // Calling all callbacks for specific topic and passing data
-        this.topics[topic].forEach(function(callback) {
+        this.topics[topic].forEach((callback) => {
             callback(data || {});
         });
     }
@@ -65,5 +65,5 @@ const tryIt = new PublishSubscribe;
 
 tryIt.subscribe('my-topic', alert);
 tryIt.publish('my-topic', 'Hello World!');
-
 ```
+The goal is to avoid dependencies between `publisher` and `subscriber` (so called `decoupling`).

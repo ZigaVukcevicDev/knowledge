@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-patterns.md" afterPath="$PROJECT_DIR$/design-patterns.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources.md" afterPath="$PROJECT_DIR$/resources.md" />
     </list>
     <ignored path="knowledge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +96,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="315">
-                <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+                <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -107,8 +108,8 @@
         <entry file="file://$PROJECT_DIR$/design-patterns.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="354">
-                <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <first_editor relative-caret-position="480">
+                <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -129,7 +130,6 @@
         <option value="$PROJECT_DIR$/code-commenting.md" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.md" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_20.md" />
-        <option value="$PROJECT_DIR$/resources.md" />
         <option value="$PROJECT_DIR$/javascript.js" />
         <option value="$PROJECT_DIR$/javascript.html" />
         <option value="$PROJECT_DIR$/es6.md" />
@@ -137,6 +137,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_49.md" />
         <option value="$PROJECT_DIR$/toc.md" />
         <option value="$PROJECT_DIR$/note.md" />
+        <option value="$PROJECT_DIR$/resources.md" />
         <option value="$PROJECT_DIR$/design-patterns.md" />
       </list>
     </option>
@@ -563,16 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="294">
-            <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code-commenting.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -648,7 +639,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="315">
-            <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -694,11 +685,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="315">
+            <caret line="12" column="137" selection-start-line="12" selection-start-column="137" selection-end-line="12" selection-end-column="137" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/design-patterns.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="354">
-            <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <first_editor relative-caret-position="480">
+            <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />

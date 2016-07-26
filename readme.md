@@ -751,10 +751,9 @@ occur, nor about the number of observers one observable can notify.
 
 ### Publish / subscribe
 
-This pattern uses an event system that sits between the objects wishing
-to receive notifications (subscribers) and the objects firing the events
-(the publishers). The goal is to avoid dependencies between the
-subscriber and the publisher (decoupling).
+This pattern uses an `event system` that sits between the objects
+wishing to receive notifications (`subscribers`) and the objects firing
+the events (`publishers`).
 
     class PublishSubscribe {
         constructor() {
@@ -780,7 +779,7 @@ subscriber and the publisher (decoupling).
             }
 
             // Calling all callbacks for specific topic and passing data
-            this.topics[topic].forEach(function(callback) {
+            this.topics[topic].forEach((callback) => {
                 callback(data || {});
             });
         }
@@ -790,6 +789,9 @@ subscriber and the publisher (decoupling).
 
     tryIt.subscribe('my-topic', alert);
     tryIt.publish('my-topic', 'Hello World!');
+
+The goal is to avoid dependencies between `publisher` and `subscriber`
+(so called `decoupling`).
 
 Resources
 ---------
@@ -812,7 +814,8 @@ Resources
 -   [@use JSDoc](http://usejsdoc.org/)
 -   [6 Ways to Bind JavaScript's this Keyword in React, ES6 &
     ES7](https://www.sitepoint.com/bind-javascripts-this-keyword-react/)
-
-#### How to merge all md files
+-   [Decoupling JavaScript applications using the Publish/Subscribe
+    pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)
+    \#\#\#\# How to merge all md files
 
 `pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md resources.md note.md -f markdown -t markdown -s -o readme.md`
