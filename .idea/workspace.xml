@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de0356ab-d182-4ac6-96a6-98b9da74a980" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-patterns.md" afterPath="$PROJECT_DIR$/design-patterns.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources.md" afterPath="$PROJECT_DIR$/resources.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/toc.md" afterPath="$PROJECT_DIR$/toc.md" />
     </list>
     <ignored path="knowledge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,12 +64,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toc.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toc.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/toc.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="727">
-                <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+              <first_editor relative-caret-position="525">
+                <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -104,12 +103,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="design-patterns.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="design-patterns.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-patterns.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="480">
-                <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+              <first_editor relative-caret-position="270">
+                <caret line="30" column="164" selection-start-line="30" selection-start-column="164" selection-end-line="30" selection-end-column="164" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -135,10 +134,10 @@
         <option value="$PROJECT_DIR$/es6.md" />
         <option value="$PROJECT_DIR$/react.md" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_49.md" />
-        <option value="$PROJECT_DIR$/toc.md" />
         <option value="$PROJECT_DIR$/note.md" />
         <option value="$PROJECT_DIR$/resources.md" />
         <option value="$PROJECT_DIR$/design-patterns.md" />
+        <option value="$PROJECT_DIR$/toc.md" />
       </list>
     </option>
   </component>
@@ -646,17 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="727">
-            <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -699,8 +687,19 @@
     <entry file="file://$PROJECT_DIR$/design-patterns.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="480">
-            <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+          <first_editor relative-caret-position="270">
+            <caret line="30" column="164" selection-start-line="30" selection-start-column="164" selection-end-line="30" selection-end-column="164" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="525">
+            <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />

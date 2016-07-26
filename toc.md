@@ -33,5 +33,5 @@
     - [HostListener](#hostlistener)
 - [JSON Web Token](#json-web-token)
 - [Design patterns](#design-patterns)
-    - [Subject/observer](#todo)
-    - [Publish/subscribe](#todo)
+    - [Subject/observer](#subject--observer)
+    - [Publish/subscribe](#publish--subscribe)
