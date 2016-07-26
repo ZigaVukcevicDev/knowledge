@@ -32,3 +32,6 @@
     - [ViewEncapsulation](#viewencapsulation)
     - [HostListener](#hostlistener)
 - [JSON Web Token](#json-web-token)
+- [Design patterns](#design-patterns)
+    - [Subject/observer](#todo)
+    - [Publish/subscribe](#todo)

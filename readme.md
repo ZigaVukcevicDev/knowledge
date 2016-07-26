@@ -35,6 +35,9 @@ Table of content
     -   [ViewEncapsulation](#viewencapsulation)
     -   [HostListener](#hostlistener)
 -   [JSON Web Token](#json-web-token)
+-   [Design patterns](#design-patterns)
+    -   [Subject/observer](#todo)
+    -   [Publish/subscribe](#todo)
 
 Code commenting
 ---------------
@@ -705,6 +708,20 @@ Sample of encoded JWT:
 
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
 
+Design patterns
+---------------
+
+### Subject / observer
+
+// TODO
+
+### Publish / subscribe
+
+// TODO
+
+https://msdn.microsoft.com/en-us/library/ff649664.aspx
+http://stackoverflow.com/questions/15594905/difference-between-observer-pub-sub-and-data-binding
+
 Resources
 ---------
 
@@ -729,4 +746,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md resources.md note.md -f markdown -t markdown -s -o readme.md`
