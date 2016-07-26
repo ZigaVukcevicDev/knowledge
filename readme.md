@@ -751,13 +751,45 @@ occur, nor about the number of observers one observable can notify.
 
 ### Publish / subscribe
 
-// TODO
+This pattern uses an event system that sits between the objects wishing
+to receive notifications (subscribers) and the objects firing the events
+(the publishers). The goal is to avoid dependencies between the
+subscriber and the publisher (decoupling).
 
-// By subscribing to a publisher, you pass topic name and pass a
-callback which will be called lately.
+    class PublishSubscribe {
+        constructor() {
+            this.topics = [];
+        }
 
-https://msdn.microsoft.com/en-us/library/ff649664.aspx
-http://stackoverflow.com/questions/15594905/difference-between-observer-pub-sub-and-data-binding
+        subscribe(topic, callback) {
+
+            // Create the topic if not yet created
+            if(!this.topics[topic]) {
+                this.topics[topic] = [];
+            }
+
+            // Add the callback to specific topic
+            this.topics[topic].push(callback);
+        }
+
+        publish(topic, data) {
+
+            // Returned false if the topic doesn't exist or there are no callbacks
+            if(!this.topics[topic] || this.topics[topic].length === 0) {
+                return false;
+            }
+
+            // Calling all callbacks for specific topic and passing data
+            this.topics[topic].forEach(function(callback) {
+                callback(data || {});
+            });
+        }
+    }
+
+    const tryIt = new PublishSubscribe;
+
+    tryIt.subscribe('my-topic', alert);
+    tryIt.publish('my-topic', 'Hello World!');
 
 Resources
 ---------
