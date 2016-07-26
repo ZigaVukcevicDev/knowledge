@@ -8,7 +8,7 @@ A `transpiler` takes ES6 source code and generates ES5 code that can run in ever
 
 #### Import
 
-// TODO
+**--- NOTE: NOT FINISHED YET ---**
 
 import defaultMember from "module-name";
 import * as name from "module-name";
@@ -22,7 +22,7 @@ import "module-name";
 
 #### Export
 
-// TODO
+**--- NOTE: NOT FINISHED YET ---**
 
 export { name1, name2, …, nameN };
 export { variable1 as name1, variable2 as name2, …, nameN };
@@ -132,7 +132,7 @@ let { cache: { age } } = httpOptions;
 
 ### Default parameters and values
 
-// @TODO
+// TODO
 
 ### Promises
 
@@ -171,7 +171,7 @@ promise
 
 ### Arrow functions
 
-The new arrow function syntax is the 'fat arrow' operator (⇒﻿). It is useful for callbacks and anonymous functions.
+The new arrow function syntax is the `fat arrow` operator (⇒﻿). It is useful for callbacks and anonymous functions.
 
 In ES5:
 
@@ -185,7 +185,7 @@ getUser(login)
   })
 ```
 
-Using 'fat arrow' operator in ES6:
+Using `fat arrow operator in ES6:
 
 ```
 getUser(login)
@@ -206,12 +206,12 @@ getUser(login)
 
 ### Sets and Maps
 
-// @TODO
+// TODO
 
 ### Template literals
 
-// @TODO
+// TODO
 
 ### Modules
 
-// @TODO
+// TODO

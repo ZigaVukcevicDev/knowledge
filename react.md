@@ -65,11 +65,11 @@ Example of determining types.
 
 ### Events
 
-// @TODO
+// TODO
 
 ### State
 
-// @TODO
+// TODO
 
 ### Bind this
 
