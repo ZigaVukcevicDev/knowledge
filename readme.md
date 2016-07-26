@@ -753,6 +753,9 @@ occur, nor about the number of observers one observable can notify.
 
 // TODO
 
+// By subscribing to a publisher, you pass topic name and pass a
+callback which will be called lately.
+
 https://msdn.microsoft.com/en-us/library/ff649664.aspx
 http://stackoverflow.com/questions/15594905/difference-between-observer-pub-sub-and-data-binding
 
