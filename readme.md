@@ -37,10 +37,7 @@ Table of content
 -   [JSON Web Token](#json-web-token)
 -   [Design patterns](#design-patterns)
     -   [Subject/observer](#subject--observer)
-    -   [Publish/subscribe](#publish--subscribe)
-
-Code commenting
----------------
+    -   [Publish/subscribe](#publish--subscribe) \#\# Code commenting
 
 ### Class
 
@@ -79,7 +76,7 @@ in every browser - e.g. Traceur or Babeljs.
 
 #### Import
 
-// TODO
+**--- NOTE: NOT FINISHED YET ---**
 
 import defaultMember from "module-name"; import \* as name from
 "module-name"; import { member } from "module-name"; import { member as
@@ -91,7 +88,7 @@ import "module-name";
 
 #### Export
 
-// TODO
+**--- NOTE: NOT FINISHED YET ---**
 
 export { name1, name2, …, nameN }; export { variable1 as name1,
 variable2 as name2, …, nameN }; export let name1, name2, …, nameN; //
@@ -186,7 +183,7 @@ with nested objects:
 
 ### Default parameters and values
 
-// @TODO
+// TODO
 
 ### Promises
 
@@ -225,7 +222,7 @@ Here's how you use that promise:
 
 ### Arrow functions
 
-The new arrow function syntax is the 'fat arrow' operator (⇒﻿). It is
+The new arrow function syntax is the `fat arrow` operator (⇒﻿). It is
 useful for callbacks and anonymous functions.
 
 In ES5:
@@ -238,7 +235,7 @@ In ES5:
         return updateMenu(rights);
       })
 
-Using 'fat arrow' operator in ES6:
+Using \`fat arrow operator in ES6:
 
     getUser(login)
       .then(user => getRights(user))
@@ -256,15 +253,15 @@ block, we would need the explicit return:
 
 ### Sets and Maps
 
-// @TODO
+// TODO
 
 ### Template literals
 
-// @TODO
+// TODO
 
 ### Modules
 
-// @TODO
+// TODO
 
 React
 -----
@@ -327,11 +324,11 @@ Example of determining types.
 
 ### Events
 
-// @TODO
+// TODO
 
 ### State
 
-// @TODO
+// TODO
 
 ### Bind this
 
@@ -433,7 +430,7 @@ to them, using Reactive Extensions﻿ library like RxJS (RxJava...). Apps
 have evolved to be more real-time: e.g. "likes" to some content can be
 reflected in real time to other connected users.
 
-`Listener` is called an `observer`﻿, and the `stream`, `an observable`﻿.
+`Listener` is called an `observer`﻿, and the `stream`, an `observable`﻿.
 A stream is an ordered sequence of events. This is well-known design
 pattern: the observer﻿ pattern.
 
@@ -713,7 +710,7 @@ Design patterns
 
 ### Subject / observer
 
-**--- NOT FINISHED YET ---**
+**--- NOTE: NOT FINISHED YET ---**
 
 The Observer is a design pattern where an object (known as a `subject`)
 maintains a list of objects depending on it (`observers`), automatically
@@ -818,6 +815,7 @@ Resources
     ES7](https://www.sitepoint.com/bind-javascripts-this-keyword-react/)
 -   [Decoupling JavaScript applications using the Publish/Subscribe
     pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)
-    \#\#\#\# How to merge all md files
+
+#### How to merge all md files
 
 `pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md resources.md note.md -f markdown -t markdown -s -o readme.md`
