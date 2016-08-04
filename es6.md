@@ -6,37 +6,42 @@ A `transpiler` takes ES6 source code and generates ES5 code that can run in ever
 
 ### Import and export
 
-#### Import
-
-**--- NOTE: NOT FINISHED YET ---**
-
-import defaultMember from "module-name";
-import * as name from "module-name";
-import { member } from "module-name";
-import { member as alias } from "module-name";
-import { member1 , member2 } from "module-name";
-import { member1 , member2 as alias2 , [...] } from "module-name";
-import defaultMember, { member [ , [...] ] } from "module-name";
-import defaultMember, * as name from "module-name";
-import "module-name";
-
 #### Export
 
-**--- NOTE: NOT FINISHED YET ---**
+Export statement is used to export functions, objects or primitives from a given file.
 
-export { name1, name2, …, nameN };
-export { variable1 as name1, variable2 as name2, …, nameN };
-export let name1, name2, …, nameN; // also var
-export let name1 = …, name2 = …, …, nameN; // also var, const
+    export { name1, name2 };
+    export { variable1 as name1, variable2 as name2 };
+    export let name1, name2;
+    export let name1=..., name2=...
 
-export default expression;
-export default function (…) { … } // also class, function*
-export default function name1(…) { … } // also class, function*
-export { name1 as default, … };
+There are two different types of export:
 
-export * from …;
-export { name1, name2, …, nameN } from …;
-export { import1 as name1, import2 as name2, …, nameN } from …;
+`Named` exports:
+
+    export { myFunction };           // exports a function declared earlier
+    export const foo = Math.sqrt(2); // exports a constant
+
+`Default` exports (only one per script):
+
+    export default function() {}
+    export default function name() {}
+    export { name1 as default, name2 };
+
+Re-exporting means adding another module’s exports to those of the current module.
+
+    export * from 'other-module-name';
+    export { name1, name2 } from 'other-module-name';
+
+#### Import
+
+The import statement is used to import functions, objects or primitives that have been exported from an external module, another script.
+
+    import nameForDefault from 'module-name';
+    import * as name from 'module-name';
+    import { name } from 'module-name';
+    import { name as anotherName } from 'module-name';
+    import { name1, name2 } from 'module-name';
 
 ### Template literals
 
