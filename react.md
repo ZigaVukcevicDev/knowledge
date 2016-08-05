@@ -124,3 +124,36 @@ They always use the value of `this` from the enclosing scope.
         this.setState({ loading: false });
     });
 ```
+
+### Stateless functional components
+
+A simpler way to define components called `stateless functional components`. These components use plain JavaScript functions. Stateless functional components `don’t support state or lifecycle methods`.
+
+Samples:
+
+    const ListItem = (props) => <li>{props.item.name}</li>;
+
+or
+
+    const List = ({ items }) => (
+        <ul>
+            {items.map((item) => <ListItem item={item} />)}
+        </ul>
+    );
+
+or
+
+    const Body = (props) => {
+        let items = transformItems(props.rawItems);
+
+        return (
+            <div>
+                <h1>{props.header}</h1>
+                <List items={items} />
+            </div>
+        );
+    };
+
+    Body.propTypes = {
+      rawItems: React.PropTypes.array.isRequired,
+    };

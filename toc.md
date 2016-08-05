@@ -23,6 +23,7 @@
     - [Events](#events)
     - [State](#state)
     - [Bind This](#bind-this)
+    - [Stateless functional components](#stateless-functional-components)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
