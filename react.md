@@ -155,5 +155,5 @@ or
     };
 
     Body.propTypes = {
-      rawItems: React.PropTypes.array.isRequired,
+        rawItems: React.PropTypes.array.isRequired,
     };

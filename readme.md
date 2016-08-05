@@ -39,7 +39,10 @@ Table of content
 -   [JSON Web Token](#json-web-token)
 -   [Design patterns](#design-patterns)
     -   [Subject/observer](#subject--observer)
-    -   [Publish/subscribe](#publish--subscribe) \#\# Code commenting
+    -   [Publish/subscribe](#publish--subscribe)
+
+Code commenting
+---------------
 
 ### Class
 
@@ -84,7 +87,7 @@ a given file.
     export { name1, name2 };
     export { variable1 as name1, variable2 as name2 };
     export let name1, name2;
-    export let name1=..., name2=...
+    export let name1 = ..., name2 = ...
 
 There are two different types of export:
 
@@ -428,7 +431,7 @@ or
     };
 
     Body.propTypes = {
-      rawItems: React.PropTypes.array.isRequired,
+        rawItems: React.PropTypes.array.isRequired,
     };
 
 TypeScript

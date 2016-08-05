@@ -13,7 +13,7 @@ Export statement is used to export functions, objects or primitives from a given
     export { name1, name2 };
     export { variable1 as name1, variable2 as name2 };
     export let name1, name2;
-    export let name1=..., name2=...
+    export let name1 = ..., name2 = ...
 
 There are two different types of export:
 
