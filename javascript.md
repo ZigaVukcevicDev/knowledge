@@ -1,5 +1,8 @@
 ## JavaScript
 
+Truthy & Falsey
+http://james.padolsey.com/javascript/truthy-falsey/
+
 ### Event listening and dispatching
 
 // TODO
