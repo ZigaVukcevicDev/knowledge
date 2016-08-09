@@ -3,7 +3,7 @@ Table of content
 
 -   [Code commenting](#code-commenting)
     -   [class](#class)
--   [JavaScript](#javascript)
+-   [JavaScript (EC5 and lower)](#javascript)
     -   [Truthy & falsy](#truthy--falsy)
     -   [Event listening and
         dispatching](#event-listening-and-dispatching)
@@ -28,6 +28,7 @@ Table of content
     -   [Bind This](#bind-this)
     -   [Stateless functional
         components](#stateless-functional-components)
+    -   [Lifecycle methods](#lifecycle-methods)
 -   [TypeScript](#typescript)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
@@ -468,8 +469,47 @@ or
         rawItems: React.PropTypes.array.isRequired,
     };
 
-TypeScript
-----------
+### Lifecycle methods
+
+These methods are executed at specific points in a component's
+lifecycle.
+
+#### componentWillMount
+
+Invoked only once, both on the client and server, immediately before the
+initial rendering occurs.
+
+[See sample](#http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
+
+// TODO If you call `setState` within this method, \`render() will see
+the updated state and will be executed only once despite the state
+change.
+
+Params: none
+
+#### componentDidMount
+
+// TODO
+
+#### componentWillReceiveProps
+
+// TODO
+
+#### shouldComponentUpdate
+
+// TODO
+
+#### componentWillUpdate
+
+// TODO
+
+#### componentDidUpdate
+
+// TODO
+
+#### componentWillUnmount
+
+// TODO \#\# TypeScript
 
 ### Why TypeScript
 

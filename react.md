@@ -157,3 +157,36 @@ or
     Body.propTypes = {
         rawItems: React.PropTypes.array.isRequired,
     };
+
+### Lifecycle methods
+
+These methods are executed at specific points in a component's lifecycle.
+
+#### componentWillMount
+
+Invoked only once, both on the client and server, immediately before the initial rendering occurs.
+
+[See sample](#http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
+
+// TODO
+If you call `setState` within this method, `render() will see the updated state and will be executed only once despite the state change.
+
+Params: none
+
+#### componentDidMount
+// TODO
+
+#### componentWillReceiveProps
+// TODO
+
+#### shouldComponentUpdate
+// TODO
+
+#### componentWillUpdate
+// TODO
+
+#### componentDidUpdate
+// TODO
+
+#### componentWillUnmount
+// TODO

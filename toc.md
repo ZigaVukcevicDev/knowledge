@@ -2,7 +2,7 @@
 
 - [Code commenting](#code-commenting)
     - [class](#class)
-- [JavaScript](#javascript)
+- [JavaScript (EC5 and lower)](#javascript)
     - [Truthy & falsy](#truthy--falsy)
     - [Event listening and dispatching](#event-listening-and-dispatching)
 - [ECMAScript 6](#ecmascript-6)
@@ -25,6 +25,7 @@
     - [State](#state)
     - [Bind This](#bind-this)
     - [Stateless functional components](#stateless-functional-components)
+    - [Lifecycle methods](#lifecycle-methods)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
