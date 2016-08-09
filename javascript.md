@@ -21,7 +21,7 @@ Examples
 
 A `falsy value` is a value that translates to false when evaluated in a Boolean context.
 
-Examples
+Seven cases
 
     if (false)
     if (null)
@@ -30,8 +30,6 @@ Examples
     if (NaN)
     if ('')
     if ("")
-    if (document.all) [1]
-
 
 ### Event listening and dispatching
 
