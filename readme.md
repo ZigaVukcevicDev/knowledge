@@ -481,8 +481,8 @@ initial rendering occurs.
 
 [See sample](http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
 
-// TODO If you call `setState` within this method, `render()` will see
-the updated state and will be invoked only once (ignoring that state
+If you call `setState` within this method, `render()` will see the
+updated state and will be invoked only once (ignoring that state
 changed).
 
 [See sample](http://codepen.io/be-codified/pen/dXQLrA?editors=0010)
@@ -511,7 +511,10 @@ Params: none
 
 #### componentWillUnmount
 
-// TODO \#\# TypeScript
+// TODO
+
+TypeScript
+----------
 
 ### Why TypeScript
 

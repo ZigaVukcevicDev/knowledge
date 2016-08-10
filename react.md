@@ -168,7 +168,6 @@ Invoked only once, both on the client and server, immediately before the initial
 
 [See sample](http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
 
-// TODO
 If you call `setState` within this method, `render()` will see the updated state and will be invoked only once (ignoring that state changed).
 
 [See sample](http://codepen.io/be-codified/pen/dXQLrA?editors=0010)
