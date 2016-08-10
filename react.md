@@ -166,10 +166,12 @@ These methods are executed at specific points in a component's lifecycle.
 
 Invoked only once, both on the client and server, immediately before the initial rendering occurs.
 
-[See sample](#http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
+[See sample](http://codepen.io/be-codified/pen/YWRgBd?editors=0011)
 
 // TODO
-If you call `setState` within this method, `render() will see the updated state and will be executed only once despite the state change.
+If you call `setState` within this method, `render()` will see the updated state and will be invoked only once (ignoring that state changed).
+
+[See sample](http://codepen.io/be-codified/pen/dXQLrA?editors=0010)
 
 Params: none
 
