@@ -5,6 +5,7 @@
 - [JavaScript (EC5 and lower)](#javascript)
     - [Truthy & falsy](#truthy--falsy)
     - [Event listening and dispatching](#event-listening-and-dispatching)
+    - [Function composition](#function-composition)
 - [ECMAScript 6](#ecmascript-6)
     - [Import and export](#import-and-export)
     - [Template literals](#template-literals)

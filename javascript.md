@@ -37,4 +37,18 @@ Seven cases
 https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
 
+### Function composition
 
+Functions can be combined to form new functions through function composition. The function `addThenSquare` is made by combining the functions `add` and `square`.
+
+    const add = function(x, y) {
+      return x + y;
+    };
+
+    const square = function(x) {
+      return x * x;
+    };
+
+    const addThenSquare = function(x, y) {
+      return square(add(x, y));
+    };
