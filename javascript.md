@@ -1,4 +1,4 @@
-## JavaScript
+## JavaScript (ES5 or lower)
 
 ### Primitives and object wrappers
 

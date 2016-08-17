@@ -3,10 +3,19 @@ Table of content
 
 -   [Code commenting](#code-commenting)
     -   [class](#class)
--   [JavaScript (EC5 and lower)](#javascript)
+-   [JavaScript (ES5 and lower)](#javascript)
+    -   [Primitives and object
+        wrappers](#primitives-and-object-wrappers)
     -   [Truthy & falsy](#truthy--falsy)
     -   [Event listening and
         dispatching](#event-listening-and-dispatching)
+    -   [IIFE](#iife)
+    -   [Hoisting](#hoisting)
+    -   [Closures](#closures)
+    -   [Understanding difference between function, method and
+        constructor
+        call](#understanding-difference-between-function-method-and-constructor-call)
+    -   [Higher order functions](#)
     -   [Function composition](#function-composition)
 -   [ECMAScript 6](#ecmascript-6)
     -   [Import and export](#import-and-export)
@@ -63,8 +72,8 @@ Code commenting
             // ...
         }
 
-JavaScript
-----------
+JavaScript (ES5 or lower)
+-------------------------
 
 ### Primitives and object wrappers
 
