@@ -6,13 +6,13 @@ This is a sample of `JSX` (JavaScript XML).
 
 ```
 let HelloWorld = React.createClass({
-  render: () => {
-    return
-      <div>
-        <h1>Hello World</h1>
-        <p>This is some text</p>
-      </div>
-  }
+    render: () => {
+        return
+            <div>
+                <h1>Hello World</h1>
+                <p>This is some text</p>
+            </div>
+    }
 });
 
 React.render(<Hello World />, document.body);
@@ -25,23 +25,23 @@ This is sample of using `props`.
 
 ```
 let HelloWorld = React.createClass({
-  render: () => {
-    return
-      <div>
-        <h1>{this.props.text}</h1>
-        <p>{this.props.children}</p>
-      </div>
-  }
+    render: () => {
+        return
+            <div>
+                <h1>{this.props.text}</h1>
+                <p>{this.props.children}</p>
+            </div>
+    }
 });
 
 React.render(
-  <div>
-    <Hello World text="Hello World" />
-    <Hello World>
-      This is some text
-    </Hello World>
-  </div>
-  , document.getElementById('some-container')
+    <div>
+        <Hello World text="Hello World" />
+        <Hello World>
+            This is some text
+        </Hello World>
+    </div>
+    , document.getElementById('some-container')
 );
 ```
 
@@ -102,14 +102,14 @@ React allows you to define arbitrary methods on your component classes and these
 
 ```
 React.createClass({
-  componentWillMount: function() {
-    this.setState({ loading: true });
+    componentWillMount: function() {
+        this.setState({ loading: true });
 
-    fetch('/').then(this.loaded);
-  },
-  loaded: function loaded() {
-    this.setState({ loading: false });
-  }
+        fetch('/').then(this.loaded);
+    },
+    loaded: function loaded() {
+        this.setState({ loading: false });
+    }
 });
 ```
 

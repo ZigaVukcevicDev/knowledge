@@ -89,9 +89,9 @@ Example:
 
 ```
 function createPony() {
-  let name = 'Rainbow Dash';
-  let color = 'blue';
-  return { name: name, color: color };
+    let name = 'Rainbow Dash';
+    let color = 'blue';
+    return { name: name, color: color };
 }
 ```
 
@@ -99,9 +99,9 @@ can be simplified to
 
 ```
 function createPony() {
-  let name = 'Rainbow Dash';
-  let color = 'blue';
-  return { name, color };
+    let name = 'Rainbow Dash';
+    let color = 'blue';
+    return { name, color };
 }
 ```
 
@@ -113,6 +113,7 @@ In ES5:
 
 ```
 var httpOptions = { timeout: 2000, isCache: true };
+
 // later
 var httpTimeout = httpOptions.timeout;
 var httpCache = httpOptions.isCache;
@@ -122,6 +123,7 @@ Now, in ES6, you can do:
 
 ```
 let httpOptions = { timeout: 2000, isCache: true };
+
 // later
 let { timeout: httpTimeout, isCache: httpCache } = httpOptions;
 ```
@@ -130,8 +132,10 @@ And you will have the same result. The cool thing is that it also works with nes
 
 ```
 let httpOptions = { timeout: 2000, cache: { age: 2 } };
+
 // later
 let { cache: { age } } = httpOptions;
+
 // you now have a variable named 'age' with value 2
 ```
 
@@ -151,14 +155,14 @@ A Promise is in one of these states:
 
 ```
 let promise = new Promise(function(resolve, reject) {
-  // do something
 
-  if (true) {
-    resolve('It worked!');
-  }
-  else {
-    reject('An error.'));
-  }
+    // do something
+    if (true) {
+        resolve('It worked!');
+    }
+    else {
+        reject('An error.'));
+    }
 });
 ```
 
@@ -166,12 +170,12 @@ Here's how you use that promise:
 
 ```
 promise
-  .then(function(result) {
-    console.log(result); // It worked!
-  })
-  .catch(function(err) {
-    console.log(err); // An error.
-  });
+    .then(function(result) {
+        console.log(result); // It worked!
+    })
+    .catch(function(err) {
+        console.log(err); // An error.
+    });
 ```
 
 ### Arrow functions
@@ -182,38 +186,34 @@ In ES5:
 
 ```
 getUser(login)
-  .then(function(user) {
-    return getRights(user);
-  })
-  .then(function(rights) {
-    return updateMenu(rights);
-  })
+    .then(function(user) {
+        return getRights(user);
+    })
+    .then(function(rights) {
+        return updateMenu(rights);
+    })
 ```
 
-Using `fat arrow operator in ES6:
+Using `fat arrow` operator in ES6:
 
 ```
 getUser(login)
-  .then(user => getRights(user))
-  .then(rights => updateMenu(rights))
+    .then(user => getRights(user))
+    .then(rights => updateMenu(rights))
 ```
 
 No need to write user ⇒ return getRights(user)﻿. But if we did have a block, we would need the explicit return:
 
 ```
 getUser(login)
-  .then(user => {
-    console.log(user);
-    return getRights(user);
-  })
-  .then(rights => updateMenu(rights))
+    .then(user => {
+        console.log(user);
+        return getRights(user);
+    })
+    .then(rights => updateMenu(rights))
 ```
 
 ### Sets and Maps
-
-// TODO
-
-### Template literals
 
 // TODO
 

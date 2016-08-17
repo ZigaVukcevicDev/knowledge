@@ -25,13 +25,13 @@ Types increase your agility when doing refactoring. Its better for the __compile
 
 ```
 interface Point2D {
-  x: number;
-  y: number;
+    x: number;
+    y: number;
 }
 interface Point3D {
-  x: number;
-  y: number;
-  z: number;
+    x: number;
+    y: number;
+    z: number;
 }
 
 var point2D: Point2D = { x: 0, y: 10, }

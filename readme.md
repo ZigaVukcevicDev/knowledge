@@ -66,13 +66,17 @@ Code commenting
 JavaScript
 ----------
 
+### Primitives and object wrappers
+
+// TODO 15
+
 ### Truthy & Falsy
 
 #### Truthy
 
 In JavaScript, a `truthy value` is a value that translates to true when
-evaluated in a Boolean context. All values are truthy unless they are
-defined as falsy.
+evaluated in a Boolean context. All values are **truthy** unless they
+are defined as **falsy**.
 
 Examples
 
@@ -80,7 +84,7 @@ Examples
     if ({})
     if ([])
     if (42)
-    if ("foo")
+    if ('foo')
     if (new Date())
     ... and everything else (unless defined as falsy)
 
@@ -105,6 +109,26 @@ Seven cases
 https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating\_and\_triggering\_events
 
+### IIFE
+
+// TODO 46
+
+### Hoisting
+
+// TODO 42
+
+### Closures
+
+// TODO 39
+
+### Understanding difference between function, method and constructor call
+
+// TODO 57
+
+### Higher order functions
+
+// TODO 60
+
 ### Function composition
 
 Functions can be combined to form new functions through function
@@ -112,15 +136,15 @@ composition. The function `addThenSquare` is made by combining the
 functions `add` and `square`.
 
     const add = function(x, y) {
-      return x + y;
+        return x + y;
     };
 
     const square = function(x) {
-      return x * x;
+        return x * x;
     };
 
     const addThenSquare = function(x, y) {
-      return square(add(x, y));
+        return square(add(x, y));
     };
 
 ECMAScript 6
@@ -215,17 +239,17 @@ you can’t assign another value later.
 Example:
 
     function createPony() {
-      let name = 'Rainbow Dash';
-      let color = 'blue';
-      return { name: name, color: color };
+        let name = 'Rainbow Dash';
+        let color = 'blue';
+        return { name: name, color: color };
     }
 
 can be simplified to
 
     function createPony() {
-      let name = 'Rainbow Dash';
-      let color = 'blue';
-      return { name, color };
+        let name = 'Rainbow Dash';
+        let color = 'blue';
+        return { name, color };
     }
 
 ### Destructuring assignment
@@ -235,6 +259,7 @@ There is now a shortcut for assigning variables from objects or arrays.
 In ES5:
 
     var httpOptions = { timeout: 2000, isCache: true };
+
     // later
     var httpTimeout = httpOptions.timeout;
     var httpCache = httpOptions.isCache;
@@ -242,6 +267,7 @@ In ES5:
 Now, in ES6, you can do:
 
     let httpOptions = { timeout: 2000, isCache: true };
+
     // later
     let { timeout: httpTimeout, isCache: httpCache } = httpOptions;
 
@@ -249,8 +275,10 @@ And you will have the same result. The cool thing is that it also works
 with nested objects:
 
     let httpOptions = { timeout: 2000, cache: { age: 2 } };
+
     // later
     let { cache: { age } } = httpOptions;
+
     // you now have a variable named 'age' with value 2
 
 ### Default parameters and values
@@ -272,25 +300,25 @@ A Promise is in one of these states:
 <!-- -->
 
     let promise = new Promise(function(resolve, reject) {
-      // do something
 
-      if (true) {
-        resolve('It worked!');
-      }
-      else {
-        reject('An error.'));
-      }
+        // do something
+        if (true) {
+            resolve('It worked!');
+        }
+        else {
+            reject('An error.'));
+        }
     });
 
 Here's how you use that promise:
 
     promise
-      .then(function(result) {
-        console.log(result); // It worked!
-      })
-      .catch(function(err) {
-        console.log(err); // An error.
-      });
+        .then(function(result) {
+            console.log(result); // It worked!
+        })
+        .catch(function(err) {
+            console.log(err); // An error.
+        });
 
 ### Arrow functions
 
@@ -300,34 +328,30 @@ useful for callbacks and anonymous functions.
 In ES5:
 
     getUser(login)
-      .then(function(user) {
-        return getRights(user);
-      })
-      .then(function(rights) {
-        return updateMenu(rights);
-      })
+        .then(function(user) {
+            return getRights(user);
+        })
+        .then(function(rights) {
+            return updateMenu(rights);
+        })
 
-Using \`fat arrow operator in ES6:
+Using `fat arrow` operator in ES6:
 
     getUser(login)
-      .then(user => getRights(user))
-      .then(rights => updateMenu(rights))
+        .then(user => getRights(user))
+        .then(rights => updateMenu(rights))
 
 No need to write user ⇒ return getRights(user)﻿. But if we did have a
 block, we would need the explicit return:
 
     getUser(login)
-      .then(user => {
-        console.log(user);
-        return getRights(user);
-      })
-      .then(rights => updateMenu(rights))
+        .then(user => {
+            console.log(user);
+            return getRights(user);
+        })
+        .then(rights => updateMenu(rights))
 
 ### Sets and Maps
-
-// TODO
-
-### Template literals
 
 // TODO
 
@@ -343,13 +367,13 @@ React
 This is a sample of `JSX` (JavaScript XML).
 
     let HelloWorld = React.createClass({
-      render: () => {
-        return
-          <div>
-            <h1>Hello World</h1>
-            <p>This is some text</p>
-          </div>
-      }
+        render: () => {
+            return
+                <div>
+                    <h1>Hello World</h1>
+                    <p>This is some text</p>
+                </div>
+        }
     });
 
     React.render(<Hello World />, document.body);
@@ -359,23 +383,23 @@ This is a sample of `JSX` (JavaScript XML).
 This is sample of using `props`.
 
     let HelloWorld = React.createClass({
-      render: () => {
-        return
-          <div>
-            <h1>{this.props.text}</h1>
-            <p>{this.props.children}</p>
-          </div>
-      }
+        render: () => {
+            return
+                <div>
+                    <h1>{this.props.text}</h1>
+                    <p>{this.props.children}</p>
+                </div>
+        }
     });
 
     React.render(
-      <div>
-        <Hello World text="Hello World" />
-        <Hello World>
-          This is some text
-        </Hello World>
-      </div>
-      , document.getElementById('some-container')
+        <div>
+            <Hello World text="Hello World" />
+            <Hello World>
+                This is some text
+            </Hello World>
+        </div>
+        , document.getElementById('some-container')
     );
 
 #### Types of properties
@@ -432,14 +456,14 @@ and these methods are automatically bound with the correct context for
 allows you move your callback code out onto your component.
 
     React.createClass({
-      componentWillMount: function() {
-        this.setState({ loading: true });
+        componentWillMount: function() {
+            this.setState({ loading: true });
 
-        fetch('/').then(this.loaded);
-      },
-      loaded: function loaded() {
-        this.setState({ loading: false });
-      }
+            fetch('/').then(this.loaded);
+        },
+        loaded: function loaded() {
+            this.setState({ loading: false });
+        }
     });
 
 #### ES2015 Arrows
@@ -557,13 +581,13 @@ Types increase your agility when doing refactoring. Its better for the
 ### Types are structural
 
     interface Point2D {
-      x: number;
-      y: number;
+        x: number;
+        y: number;
     }
     interface Point3D {
-      x: number;
-      y: number;
-      z: number;
+        x: number;
+        y: number;
+        z: number;
     }
 
     var point2D: Point2D = { x: 0, y: 10, }
@@ -607,16 +631,16 @@ Every observable, just like every array, can be transformed:
 <!-- -->
 
     [1, 2, 3, 4, 5]
-      .map(x => x * 2)
-      .filter(x => x > 5)
-      .forEach(x => console.log(x)); // 6, 8, 10
+        .map(x => x * 2)
+        .filter(x => x > 5)
+        .forEach(x => console.log(x)); // 6, 8, 10
 
 RxJS let us build an observable from an array.
 
     Observable.fromArray([1, 2, 3, 4, 5])
-      .map(x => x * 2)
-      .filter(x => x > 5)
-      .subscribe(x => console.log(x)); // 6, 8, 10
+        .map(x => x * 2)
+        .filter(x => x > 5)
+        .subscribe(x => console.log(x)); // 6, 8, 10
 
 But an observable is more than a collection. It is an asynchronous
 collection, where the events arrive over time.
@@ -624,10 +648,10 @@ collection, where the events arrive over time.
     let input = $('input');
 
     Observable.fromEvent(input, 'keyup')
-      .subscribe(() => console.log('keyup!'));
+        .subscribe(() => console.log('keyup!'));
 
-      input.trigger('keyup'); // logs "keyup!"
-      input.trigger('keyup'); // logs "keyup!"
+        input.trigger('keyup'); // logs 'keyup!'
+        input.trigger('keyup'); // logs 'keyup!'
 
 You can build observables from AJAX requests, browser events, Web
 sockets responses, a promise, whatever you can think of.
@@ -639,16 +663,16 @@ demonstration.
     let observable = Observable.create((observer) => observer.next('hello'));
 
     observable.subscribe((value) => console.log(value));
-    // logs "hello"
+    // logs 'hello'
 
 Here, the range﻿ method we are using to create the events will iterate
 from 1 to 5 and then emit the 'completed' signal:
 
     Observable.range(1, 5)
-      .map(x => x * 2)
-      .filter(x => x > 5)
-      .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
-    // 6, 8, 10, done
+        .map(x => x * 2)
+        .filter(x => x > 5)
+        .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
+        // 6, 8, 10, done
 
 ### Reactive programming in Angular 2
 
@@ -664,21 +688,21 @@ this method can receive three parameters:
     let emitter = new EventEmitter();
 
     emitter.subscribe(
-      value => console.log(value),
-      error => console.log(error),
-      () => console.log('done')
+        value => console.log(value),
+        error => console.log(error),
+        () => console.log('done')
     );
 
     emitter.emit('hello');
     emitter.emit('there');
     emitter.complete();
 
-    // logs "hello", then "there", then "done"
+    // logs 'hello', then 'there', then 'done'
 
 ### Subject
 
 A `Subject` is a sort of bridge that is available in some
-implementations of ReactiveX that acts both as an `observer` and as an
+implementations of ReactiveX that acts both as an `Observer` and as an
 `Observable`. Because it is an observer, it can subscribe to one or more
 Observables, and because it is an Observable, it can pass through the
 items it observes by reemitting them, and it can also emit new items.
@@ -713,15 +737,15 @@ Angular 2
     import { Component, View } from 'angular2/angular2';
 
     @Component({
-      selector: 'message'
+        selector: 'message'
     })
 
     @View({
-      template: `<h1>Hello Angular {{version}}</h1>`
+        template: `<h1>Hello Angular {{version}}</h1>`
     })
 
     class Message {
-      constructor(public version: string) {}
+        constructor(public version: string) {}
     }
 
     <message></message>
@@ -738,18 +762,18 @@ Angular 2
     import { Directive } from 'angular2/angular2';
 
     @Directive({
-      selector: '[myDirective]',
-      hostListeners: {
-        'click': 'showMessage()'
-      }
+        selector: '[myDirective]',
+        hostListeners: {
+            'click': 'showMessage()'
+        }
     })
 
     class Message {
-      constructor() {}
+        constructor() {}
 
-      showMessage() {
-        console.log('Hello Directive');
-      }
+        showMessage() {
+            console.log('Hello Directive');
+        }
     }
 
     <button myDirective>Click here</button>
@@ -774,12 +798,12 @@ the window object is instantiated outside Angular.
     import { HostListener } from 'angular2/core';
 
     class SomeClass {
-      @HostListener('window:scroll', ['$event'])
-      onScroll(event) {
-        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-          console.log('Bottom of page');
+        @HostListener('window:scroll', ['$event'])
+            onScroll(event) {
+                if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+                console.log('Bottom of page');
+            }
         }
-      }
     }
 
 JSON Web Token
@@ -818,8 +842,8 @@ Therefore, a JWT typically looks like the following.
 For example:
 
     {
-      "alg": "HS256",
-      "typ": "JWT"
+        alg: 'HS256',
+        typ: 'JWT'
     }
 
 ### Payload
@@ -831,9 +855,9 @@ claims.
 An example of payload could be:
 
     {
-      "sub": "1234567890",
-      "name": "John Doe",
-      "admin": true
+        sub: '1234567890',
+        name: 'John Doe',
+        admin: true
     }
 
 ### Signature

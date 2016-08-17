@@ -1,10 +1,14 @@
 ## JavaScript
 
+### Primitives and object wrappers
+
+// TODO 15
+
 ### Truthy & Falsy
 
 #### Truthy
 
-In JavaScript, a `truthy value` is a value that translates to true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy.
+In JavaScript, a `truthy value` is a value that translates to true when evaluated in a Boolean context. All values are **truthy** unless they are defined as **falsy**.
 
 Examples
 
@@ -12,7 +16,7 @@ Examples
     if ({})
     if ([])
     if (42)
-    if ("foo")
+    if ('foo')
     if (new Date())
     ... and everything else (unless defined as falsy)
 
@@ -37,18 +41,38 @@ Seven cases
 https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
 
+### IIFE
+
+// TODO 46
+
+### Hoisting
+
+// TODO 42
+
+### Closures
+
+// TODO 39
+
+### Understanding difference between function, method and constructor call
+
+// TODO 57
+
+### Higher order functions
+
+// TODO 60
+
 ### Function composition
 
 Functions can be combined to form new functions through function composition. The function `addThenSquare` is made by combining the functions `add` and `square`.
 
     const add = function(x, y) {
-      return x + y;
+        return x + y;
     };
 
     const square = function(x) {
-      return x * x;
+        return x * x;
     };
 
     const addThenSquare = function(x, y) {
-      return square(add(x, y));
+        return square(add(x, y));
     };

@@ -25,8 +25,8 @@ For example:
 
 ```
 {
-  "alg": "HS256",
-  "typ": "JWT"
+    alg: 'HS256',
+    typ: 'JWT'
 }
 ```
 
@@ -38,9 +38,9 @@ An example of payload could be:
 
 ```
 {
-  "sub": "1234567890",
-  "name": "John Doe",
-  "admin": true
+    sub: '1234567890',
+    name: 'John Doe',
+    admin: true
 }
 ```
 

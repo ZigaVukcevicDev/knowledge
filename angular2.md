@@ -13,15 +13,15 @@
 import { Component, View } from 'angular2/angular2';
 
 @Component({
-  selector: 'message'
+    selector: 'message'
 })
 
 @View({
-  template: `<h1>Hello Angular {{version}}</h1>`
+    template: `<h1>Hello Angular {{version}}</h1>`
 })
 
 class Message {
-  constructor(public version: string) {}
+    constructor(public version: string) {}
 }
 
 <message></message>
@@ -38,18 +38,18 @@ class Message {
 import { Directive } from 'angular2/angular2';
 
 @Directive({
-  selector: '[myDirective]',
-  hostListeners: {
-    'click': 'showMessage()'
-  }
+    selector: '[myDirective]',
+    hostListeners: {
+        'click': 'showMessage()'
+    }
 })
 
 class Message {
-  constructor() {}
+    constructor() {}
 
-  showMessage() {
-    console.log('Hello Directive');
-  }
+    showMessage() {
+        console.log('Hello Directive');
+    }
 }
 
 <button myDirective>Click here</button>
@@ -71,12 +71,12 @@ Angular provides an easy way to listen to events on `window` or `document`. Regu
 import { HostListener } from 'angular2/core';
 
 class SomeClass {
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event) {
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-      console.log('Bottom of page');
+    @HostListener('window:scroll', ['$event'])
+        onScroll(event) {
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+            console.log('Bottom of page');
+        }
     }
-  }
 }
 
 ```

@@ -18,18 +18,18 @@ Every observable, just like every array, can be transformed:
 
 ```
 [1, 2, 3, 4, 5]
-  .map(x => x * 2)
-  .filter(x => x > 5)
-  .forEach(x => console.log(x)); // 6, 8, 10
+    .map(x => x * 2)
+    .filter(x => x > 5)
+    .forEach(x => console.log(x)); // 6, 8, 10
 ```
 
 RxJS let us build an observable from an array.
 
 ```
 Observable.fromArray([1, 2, 3, 4, 5])
-  .map(x => x * 2)
-  .filter(x => x > 5)
-  .subscribe(x => console.log(x)); // 6, 8, 10
+    .map(x => x * 2)
+    .filter(x => x > 5)
+    .subscribe(x => console.log(x)); // 6, 8, 10
 ```
 
 But an observable is more than a collection. It is an asynchronous collection, where the events arrive over time.
@@ -38,10 +38,10 @@ But an observable is more than a collection. It is an asynchronous collection, w
 let input = $('input');
 
 Observable.fromEvent(input, 'keyup')
-  .subscribe(() => console.log('keyup!'));
+    .subscribe(() => console.log('keyup!'));
 
-  input.trigger('keyup'); // logs "keyup!"
-  input.trigger('keyup'); // logs "keyup!"
+    input.trigger('keyup'); // logs 'keyup!'
+    input.trigger('keyup'); // logs 'keyup!'
 ```
 
 You can build observables from AJAX requests, browser events, Web sockets responses, a promise, whatever you can think of.
@@ -52,17 +52,17 @@ Observable.create﻿ takes a function that will emit events on the observer﻿ g
 let observable = Observable.create((observer) => observer.next('hello'));
 
 observable.subscribe((value) => console.log(value));
-// logs "hello"
+// logs 'hello'
 ```
 
 Here, the range﻿ method we are using to create the events will iterate from 1 to 5 and then emit the 'completed' signal:
 
 ```
 Observable.range(1, 5)
-  .map(x => x * 2)
-  .filter(x => x > 5)
-  .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
-// 6, 8, 10, done
+    .map(x => x * 2)
+    .filter(x => x > 5)
+    .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
+    // 6, 8, 10, done
 ```
 
 ### Reactive programming in Angular 2
@@ -77,21 +77,21 @@ The EventEmitter﻿ has a method `subscribe()`﻿ to react to events and this me
 let emitter = new EventEmitter();
 
 emitter.subscribe(
-  value => console.log(value),
-  error => console.log(error),
-  () => console.log('done')
+    value => console.log(value),
+    error => console.log(error),
+    () => console.log('done')
 );
 
 emitter.emit('hello');
 emitter.emit('there');
 emitter.complete();
 
-// logs "hello", then "there", then "done"
+// logs 'hello', then 'there', then 'done'
 ```
 
 ### Subject
 
-A `Subject` is a sort of bridge that is available in some implementations of ReactiveX that acts both as an `observer` and as an `Observable`. Because it is an observer, it can subscribe to one or more Observables, and because it is an Observable, it can pass through the items it observes by reemitting them, and it can also emit new items.
+A `Subject` is a sort of bridge that is available in some implementations of ReactiveX that acts both as an `Observer` and as an `Observable`. Because it is an observer, it can subscribe to one or more Observables, and because it is an Observable, it can pass through the items it observes by reemitting them, and it can also emit new items.
 
 ```
 spinner$: Subject<boolean> = new Subject();
