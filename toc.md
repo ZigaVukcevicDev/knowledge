@@ -10,7 +10,7 @@
     - [Hoisting](#hoisting)
     - [Closures](#closures)
     - [Understanding difference between function, method and constructor call](#understanding-difference-between-function-method-and-constructor-call)
-    - [Higher order functions](#)
+    - [Higher order functions](#higher-order-functions)
     - [Function composition](#function-composition)
 - [ECMAScript 6](#ecmascript-6)
     - [Import and export](#import-and-export)
