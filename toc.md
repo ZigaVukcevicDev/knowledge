@@ -7,7 +7,6 @@
     - [Truthy & falsy](#truthy--falsy)
     - [Event listening and dispatching](#event-listening-and-dispatching)
     - [IIFE](#iife)
-    - [Hoisting](#hoisting)
     - [Closures](#closures)
     - [Understanding difference between function, method and constructor call](#understanding-difference-between-function-method-and-constructor-call)
     - [Higher order functions](#higher-order-functions)
