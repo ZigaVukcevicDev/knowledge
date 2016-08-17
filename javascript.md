@@ -45,10 +45,6 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggerin
 
 // TODO 46
 
-### Hoisting
-
-// TODO 42
-
 ### Closures
 
 // TODO 39
