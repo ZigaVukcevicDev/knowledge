@@ -591,6 +591,10 @@ Params: none
         ref.setAttribute('d', somethingCalculatedBasedOnValue);
     }
 
+See more at: -
+https://facebook.github.io/react-native/docs/animations.html -
+https://facebook.github.io/react-native/docs/animated.html
+
 TypeScript
 ----------
 

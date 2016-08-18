@@ -221,3 +221,7 @@ Params: none
         // use reference on element and change its data, e.g.
         ref.setAttribute('d', somethingCalculatedBasedOnValue);
     }
+
+See more at:
+- https://facebook.github.io/react-native/docs/animations.html
+- https://facebook.github.io/react-native/docs/animated.html
