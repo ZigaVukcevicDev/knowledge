@@ -32,6 +32,7 @@
     - [Bind This](#bind-this)
     - [Stateless functional components](#stateless-functional-components)
     - [Lifecycle methods](#lifecycle-methods)
+    - [Animations](#animations)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
