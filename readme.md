@@ -10,7 +10,6 @@ Table of content
     -   [Event listening and
         dispatching](#event-listening-and-dispatching)
     -   [IIFE](#iife)
-    -   [Hoisting](#hoisting)
     -   [Closures](#closures)
     -   [Understanding difference between function, method and
         constructor
@@ -560,6 +559,36 @@ Params: none
 #### componentWillUnmount
 
 // TODO
+
+#### Animations
+
+    componentWillMount() {
+        this.animationValue = new Animated.Value();
+
+        this.animationValue.addListener(value => {
+            this.animationStep(value);
+        });
+    }
+
+    componentDidMount() {
+        this.animateIt();
+    }
+
+    animateIt() {
+        this.animationValue.setValue(0);
+
+        Animated.timing(this.animationValue, {
+            toValue: 100,
+            duration: this.props.animationDuration,
+            easing: Easing.linear
+        }).start();
+    }
+
+    animationStep(value) {
+        // value will be between 1 - 100
+        // use reference on element and change its data, e.g.
+        ref.setAttribute('d', somethingCalculatedBasedOnValue);
+    }
 
 TypeScript
 ----------
