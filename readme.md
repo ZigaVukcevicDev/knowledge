@@ -76,10 +76,11 @@ Code commenting
 JavaScript (ES5 or lower)
 -------------------------
 
+<!---
 ### Primitives and object wrappers
 
 // TODO 15
-
+-->
 ### Truthy & Falsy
 
 #### Truthy
@@ -113,11 +114,12 @@ Seven cases
     if ('')
     if ("")
 
+<!---
 ### Event listening and dispatching
 
 // TODO
 https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating\_and\_triggering\_events
+https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
 
 ### IIFE
 
@@ -134,7 +136,7 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating\_and\_trigger
 ### Higher order functions
 
 // TODO 60
-
+-->
 ### Function composition
 
 Functions can be combined to form new functions through function
@@ -156,8 +158,9 @@ functions `add` and `square`.
 ECMAScript 6
 ------------
 
+<!---
 // TODO: check this samples: http://webapplog.com/es6/
-
+-->
 A `transpiler` takes ES6 source code and generates ES5 code that can run
 in every browser - e.g. Traceur or Babeljs.
 
@@ -287,10 +290,11 @@ with nested objects:
 
     // you now have a variable named 'age' with value 2
 
+<!---
 ### Default parameters and values
 
 // TODO
-
+-->
 ### Promises
 
 The Promise object is used for deferred (postponed) and asynchronous
@@ -357,6 +361,7 @@ block, we would need the explicit return:
         })
         .then(rights => updateMenu(rights))
 
+<!---
 ### Sets and Maps
 
 // TODO
@@ -364,7 +369,7 @@ block, we would need the explicit return:
 ### Modules
 
 // TODO
-
+-->
 React
 -----
 
@@ -424,6 +429,7 @@ Example of determining types.
             }).isRequired
         };
 
+<!--
 ### Events
 
 // TODO
@@ -431,7 +437,7 @@ Example of determining types.
 ### State
 
 // TODO
-
+-->
 ### Bind this
 
 It’s not always clear what `this` is going to refer to in your code. As
@@ -538,30 +544,25 @@ changed).
 
 Params: none
 
+<!--
 #### componentDidMount
-
 // TODO
 
 #### componentWillReceiveProps
-
 // TODO
 
 #### shouldComponentUpdate
-
 // TODO
 
 #### componentWillUpdate
-
 // TODO
 
 #### componentDidUpdate
-
 // TODO
 
 #### componentWillUnmount
-
 // TODO
-
+-->
 #### Animations
 
     componentWillMount() {
@@ -924,21 +925,17 @@ Sample of encoded JWT:
 Design patterns
 ---------------
 
+<!---
 ### Subject / observer
 
 **--- NOTE: NOT FINISHED YET ---**
 
-The Observer is a design pattern where an object (known as a `subject`)
-maintains a list of objects depending on it (`observers`), automatically
-notifying them of any changes of state.
+The Observer is a design pattern where an object (known as a `subject`) maintains a list of objects depending on it (`observers`), automatically notifying them of any changes of state.
 
-In the Observer/Observable pattern, the observers are aware of the
-observable.
+In the Observer/Observable pattern, the observers are aware of the observable.
 
-// ConcreteSubject: broadcasts notifications to observers on changes of
-state, stores the state of ConcreteObservers // ConcreteObserver: stores
-a reference to the ConcreteSubject, implements an update interface for
-the Observer to ensure state is consistent with the Subject's
+// ConcreteSubject: broadcasts notifications to observers on changes of state, stores the state of ConcreteObservers
+// ConcreteObserver: stores a reference to the ConcreteSubject, implements an update interface for the Observer to ensure state is consistent with the Subject's
 
 // There are no topics, subject calls method on all observers.
 
@@ -946,24 +943,16 @@ the Observer to ensure state is consistent with the Subject's
 
 Maintains a list of observers (can add or remove them).
 
-// observable calls the appropriate method of all its observers when
-some event occurs. The
+// observable calls the appropriate method of all its observers when some event occurs. The
 
 #### Observer
 
-Provides an update interface for objects that need to be notified of a
-Subject's changes of state.
+Provides an update interface for objects that need to be notified of a Subject's changes of state.
 
-// TODO //Observer, or Observable/Observer: // A design pattern by which
-an object is imbued with the ability to notify others of specific events
-- typically done using actual events, which are kind of like slots in
-the object with the shape of a specific function/method. The observable
-is the one who provides notifications, and the observer receives those
-notifications. In .net, the observable can expose an event and the
-observer subscribes to that event with an "event handler"shaped hook. No
-assumptions are made about the specific mechanism which notifications
-occur, nor about the number of observers one observable can notify.
-
+// TODO
+//Observer, or Observable/Observer:
+// A design pattern by which an object is imbued with the ability to notify others of specific events - typically done using actual events, which are kind of like slots in the object with the shape of a specific function/method. The observable is the one who provides notifications, and the observer receives those notifications. In .net, the observable can expose an event and the observer subscribes to that event with an "event handler"shaped hook. No assumptions are made about the specific mechanism which notifications occur, nor about the number of observers one observable can notify.
+-->
 ### Publish / subscribe
 
 This pattern uses an `event system` that sits between the objects
