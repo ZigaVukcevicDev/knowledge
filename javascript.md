@@ -1,8 +1,10 @@
 ## JavaScript (ES5 or lower)
 
+<!---
 ### Primitives and object wrappers
 
 // TODO 15
+-->
 
 ### Truthy & Falsy
 
@@ -35,6 +37,7 @@ Seven cases
     if ('')
     if ("")
 
+<!---
 ### Event listening and dispatching
 
 // TODO
@@ -56,6 +59,7 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggerin
 ### Higher order functions
 
 // TODO 60
+-->
 
 ### Function composition
 

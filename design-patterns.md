@@ -1,5 +1,6 @@
 ## Design patterns
 
+<!---
 ### Subject / observer
 
 **--- NOTE: NOT FINISHED YET ---**
@@ -26,7 +27,7 @@ Provides an update interface for objects that need to be notified of a Subject's
 // TODO
 //Observer, or Observable/Observer:
 // A design pattern by which an object is imbued with the ability to notify others of specific events - typically done using actual events, which are kind of like slots in the object with the shape of a specific function/method. The observable is the one who provides notifications, and the observer receives those notifications. In .net, the observable can expose an event and the observer subscribes to that event with an "event handler"shaped hook. No assumptions are made about the specific mechanism which notifications occur, nor about the number of observers one observable can notify.
-
+-->
 
 ### Publish / subscribe
 

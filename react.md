@@ -63,6 +63,7 @@ Example of determining types.
     };
 ```
 
+<!--
 ### Events
 
 // TODO
@@ -70,6 +71,7 @@ Example of determining types.
 ### State
 
 // TODO
+-->
 
 ### Bind this
 
@@ -174,6 +176,7 @@ If you call `setState` within this method, `render()` will see the updated state
 
 Params: none
 
+<!--
 #### componentDidMount
 // TODO
 
@@ -191,6 +194,7 @@ Params: none
 
 #### componentWillUnmount
 // TODO
+-->
 
 #### Animations
 

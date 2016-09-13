@@ -1,6 +1,8 @@
 ## ECMAScript 6
 
+<!---
 // TODO: check this samples: http://webapplog.com/es6/
+-->
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
@@ -139,9 +141,11 @@ let { cache: { age } } = httpOptions;
 // you now have a variable named 'age' with value 2
 ```
 
+<!---
 ### Default parameters and values
 
 // TODO
+-->
 
 ### Promises
 
@@ -213,6 +217,7 @@ getUser(login)
     .then(rights => updateMenu(rights))
 ```
 
+<!---
 ### Sets and Maps
 
 // TODO
@@ -220,3 +225,4 @@ getUser(login)
 ### Modules
 
 // TODO
+-->
