@@ -45,3 +45,4 @@
 - [Design patterns](#design-patterns)
     - [Subject/observer](#subject--observer)
     - [Publish/subscribe](#publish--subscribe)
+- [Not to neglect](#not-to-neglect)
