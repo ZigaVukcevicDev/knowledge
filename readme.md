@@ -1006,7 +1006,10 @@ the events (`publishers`).
     tryIt.publish('my-topic', 'Hello World!');
 
 The goal is to avoid dependencies between `publisher` and `subscriber`
-(so called `decoupling`). \#\# Not to neglect
+(so called `decoupling`).
+
+Not to neglect
+--------------
 
 This title could also be
 `What I've learned on my way  from respective senior developers`.
