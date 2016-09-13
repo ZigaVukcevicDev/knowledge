@@ -824,11 +824,11 @@ Write a `component` when you want to create a reusable set of DOM
 elements of UI with custom behaviour. Write a `directive` when you want
 to write reusable behaviour to supplement existing DOM elements.
 
+<!---
 ### ViewEncapsulation
 
-// TODO: read this
-https://toddmotto.com/emulated-native-shadow-dom-angular-2-view-encapsulation
-
+// TODO: read this https://toddmotto.com/emulated-native-shadow-dom-angular-2-view-encapsulation
+-->
 ### HostListener
 
 Angular provides an easy way to listen to events on `window` or
