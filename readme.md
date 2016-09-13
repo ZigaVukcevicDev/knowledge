@@ -1005,7 +1005,14 @@ the events (`publishers`).
     tryIt.publish('my-topic', 'Hello World!');
 
 The goal is to avoid dependencies between `publisher` and `subscriber`
-(so called `decoupling`).
+(so called `decoupling`). \#\# Not to neglect
+
+This title could also be
+`What I've learned on my way  from respective senior developers`.
+
+-   Writing clean and "cached" code is important. It doesn't really
+    matter if a user sees his site in 30 ms (instead of 20 ms) but it
+    matters if we can serve 800 sites/second (instead of just 500).
 
 Resources
 ---------
@@ -1033,4 +1040,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
