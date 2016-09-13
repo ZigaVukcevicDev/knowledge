@@ -3,9 +3,9 @@ Table of content
 
 -   [Code commenting](#code-commenting)
     -   [class](#class)
--   [JavaScript (ES5 and lower)](#javascript)
+-   [JavaScript (ES5 and lower)](##javascript-es5-or-lower)
     -   [Primitives and object
-        wrappers](#primitives-and-object-wrappers)
+        wrappers](#primitives-and-object-wrappers%20(TODO))
     -   [Truthy & falsy](#truthy--falsy)
     -   [Event listening and
         dispatching](#event-listening-and-dispatching)

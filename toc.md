@@ -2,8 +2,8 @@
 
 - [Code commenting](#code-commenting)
     - [class](#class)
-- [JavaScript (ES5 and lower)](#javascript)
-    - [Primitives and object wrappers](#primitives-and-object-wrappers)
+- [JavaScript (ES5 and lower)](##javascript-es5-or-lower)
+    - [Primitives and object wrappers](#primitives-and-object-wrappers (TODO))
     - [Truthy & falsy](#truthy--falsy)
     - [Event listening and dispatching](#event-listening-and-dispatching)
     - [IIFE](#iife)
