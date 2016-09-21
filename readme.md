@@ -39,6 +39,7 @@ Table of content
         components](#stateless-functional-components)
     -   [Lifecycle methods](#lifecycle-methods)
     -   [Animations](#animations)
+-   [Git (TODO)](#git)
 -   [TypeScript](#typescript)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
@@ -597,6 +598,12 @@ See more at: -
 https://facebook.github.io/react-native/docs/animations.html -
 https://facebook.github.io/react-native/docs/animated.html
 
+Git
+---
+
+<!---
+    http://learngitbranching.js.org/
+-->
 TypeScript
 ----------
 
@@ -1033,4 +1040,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
