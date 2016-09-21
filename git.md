@@ -24,16 +24,11 @@ This command updates the index using the current content found in the working tr
 
 Wildcards are supported, e.g. `git add '*.txt'` or you can add all files by `git add .`
 
-
 ### Commit
-
-`git commit`
-
-Records changes to the repository.
 
 `git commit -m 'Some message'`
 
-By using `-m` flag, a custom message will be added with commit.
+Records changes to the repository. By using `-m` flag, a custom message will be added with commit.
 
 ### Log
 
