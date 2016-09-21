@@ -18,11 +18,12 @@ Shows the working tree status.
 
 ### Add
 
-`git add`
+`git add some-file.txt`
 
 This command updates the index using the current content found in the working tree, to prepare the content `staged` for the next commit.
 
-Wildcards are supported, e.g. `git add '*.txt'`
+Wildcards are supported, e.g. `git add '*.txt'` or you can add all files by `git add .`
+
 
 ### Commit
 
