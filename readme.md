@@ -602,6 +602,8 @@ Git
 ---
 
 <!---
+    // TODO: table of contents
+
     https://try.github.io/levels/1/challenges/10
 -->
 ### Init
@@ -629,13 +631,10 @@ by `git add .`
 
 ### Commit
 
-`git commit`
-
-Records changes to the repository.
-
 `git commit -m 'Some message'`
 
-By using `-m` flag, a custom message will be added with commit.
+Records changes to the repository. By using `-m` flag, a custom message
+will be added with commit.
 
 ### Log
 
@@ -643,8 +642,24 @@ By using `-m` flag, a custom message will be added with commit.
 
 Shows commit logs.
 
-TypeScript
-----------
+### Remote add
+
+`git remote add origin some-url`
+
+Manages set of tracked repositories.
+
+### Push
+
+`git push -u origin master`
+
+Updates remote refs along with associated objects.
+
+### Pull
+
+`git pull origin master`
+
+Fetchs from and integrate with another repository or a local branch.
+\#\# TypeScript
 
 ### Why TypeScript
 

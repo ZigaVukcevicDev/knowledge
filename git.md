@@ -1,6 +1,8 @@
 ## Git
 
 <!---
+    // TODO: table of contents
+
     https://try.github.io/levels/1/challenges/10
 -->
 
@@ -35,3 +37,21 @@ Records changes to the repository. By using `-m` flag, a custom message will be 
 `git log`
 
 Shows commit logs.
+
+### Remote add
+
+`git remote add origin some-url`
+
+Manages set of tracked repositories.
+
+### Push
+
+`git push -u origin master`
+
+Updates remote refs along with associated objects.
+
+### Pull
+
+`git pull origin master`
+
+Fetchs from and integrate with another repository or a local branch.
