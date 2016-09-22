@@ -608,20 +608,20 @@ Git
 -->
 ### Init
 
-`git init`
+    git init
 
 Initializes a repository in an existing directory. This will create
 `.git` hidden folder, a location where Git operates.
 
 ### Status
 
-`git status`
+    git status
 
 Shows the working tree status.
 
 ### Add
 
-`git add some-file.txt`
+    git add some-file.txt
 
 This command updates the index using the current content found in the
 working tree, to prepare the content `staged` for the next commit.
@@ -631,32 +631,32 @@ by `git add .`
 
 ### Commit
 
-`git commit -m 'Some message'`
+    git commit -m 'Some message'
 
 Records changes to the repository. By using `-m` flag, a custom message
 will be added with commit.
 
 ### Log
 
-`git log`
+    git log
 
 Shows commit logs.
 
 ### Remote add
 
-`git remote add origin some-url`
+    git remote add origin some-url
 
 Manages set of tracked repositories.
 
 ### Push
 
-`git push -u origin master`
+    git push -u origin master
 
 Updates remote refs along with associated objects.
 
 ### Pull
 
-`git pull origin master`
+    git pull origin master
 
 Fetchs from and integrate with another repository or a local branch.
 
