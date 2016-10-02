@@ -13,6 +13,7 @@ class Point {
      * @param {number} y - The y value.
      *
      * @return {number} The x value.
+     *
      */
     constructor(x, y) {
         // ...
