@@ -208,6 +208,40 @@ that have been exported from an external module, another script.
     import { name as anotherName } from 'module-name';
     import { name1, name2 } from 'module-name';
 
+### Class
+
+#### Class definition
+
+    class Shape {
+        constructor (id, x, y) {
+            this.id = id
+            this.move(x, y)
+        }
+        move (x, y) {
+            this.x = x
+            this.y = y
+        }
+    }
+
+#### Class inheritance, base class access
+
+    class Shape {
+        ...
+        toString() {
+            return `Shape(${this.id})`;
+        }
+    }
+
+    class Rectangle extends Shape {
+        constructor (id, x, y, width, height) {
+            super(id, x, y)
+            ...
+        }
+        toString() {
+            return "Rectangle > " + super.toString();
+        }
+    }
+
 ### Template literals
 
 By using `back-tick` you can use variables with strings.
