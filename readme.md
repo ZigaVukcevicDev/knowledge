@@ -242,6 +242,17 @@ that have been exported from an external module, another script.
         }
     }
 
+#### Static members
+
+    class Circle extends Shape {
+        ...
+        static defaultCircle() {
+            return new Circle('default', 0, 0, 100)
+        }
+    }
+
+    const defCircle = Circle.defaultCircle();
+
 ### Template literals
 
 By using `back-tick` you can use variables with strings.
@@ -326,11 +337,12 @@ with nested objects:
 
     // you now have a variable named 'age' with value 2
 
-<!---
 ### Default parameters and values
 
-// TODO
--->
+    const link = function(color = 'red', url = 'http://some-url.com') {
+        ...
+    }
+
 ### Promises
 
 The Promise object is used for deferred (postponed) and asynchronous

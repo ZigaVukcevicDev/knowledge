@@ -79,6 +79,17 @@ The import statement is used to import functions, objects or primitives that hav
         }
     }
 
+#### Static members
+
+    class Circle extends Shape {
+        ...
+        static defaultCircle() {
+            return new Circle('default', 0, 0, 100)
+        }
+    }
+
+    const defCircle = Circle.defaultCircle();
+
 ### Template literals
 
 By using `back-tick` you can use variables with strings.
@@ -175,11 +186,11 @@ let { cache: { age } } = httpOptions;
 // you now have a variable named 'age' with value 2
 ```
 
-<!---
 ### Default parameters and values
 
-// TODO
--->
+    const link = function(color = 'red', url = 'http://some-url.com') {
+        ...
+    }
 
 ### Promises
 
