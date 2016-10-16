@@ -202,6 +202,8 @@ A Promise is in one of these states:
 - `fulfilled`: meaning that the operation completed successfully.
 - `rejected`: meaning that the operation failed.
 
+a) Example
+
 ```
 let promise = new Promise(function(resolve, reject) {
 
@@ -225,6 +227,18 @@ promise
     .catch(function(err) {
         console.log(err); // An error.
     });
+```
+
+b) Another example:
+
+```
+function msgAfterTimeout(msg, time) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(msg), time)
+    })
+}
+
+msgAfterTimeout("Breakfast is served.", 500).then(result => console.log(result));
 ```
 
 ### Arrow functions
