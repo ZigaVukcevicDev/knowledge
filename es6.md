@@ -79,6 +79,19 @@ The import statement is used to import functions, objects or primitives that hav
         }
     }
 
+#### Using extends with built-in objects
+
+    class myDate extends Date {
+        constructor() {
+            super();
+        }
+
+        getFormattedDate() {
+            const months = ['Jan', 'Feb', 'Mar', etc.];
+            return this.getDate() + "-" + months[this.getMonth()] + "-" + this.getFullYear();
+        }
+    }
+
 #### Static members
 
     class Circle extends Shape {

@@ -76,3 +76,9 @@ Functions can be combined to form new functions through function composition. Th
     const addThenSquare = function(x, y) {
         return square(add(x, y));
     };
+
+<!---
+### Prototype
+
+// TODO
+-->

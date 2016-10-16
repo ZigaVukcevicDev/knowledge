@@ -157,6 +157,11 @@ functions `add` and `square`.
         return square(add(x, y));
     };
 
+<!---
+### Prototype
+
+// TODO
+-->
 ECMAScript 6
 ------------
 
@@ -239,6 +244,19 @@ that have been exported from an external module, another script.
         }
         toString() {
             return "Rectangle > " + super.toString();
+        }
+    }
+
+#### Using extends with built-in objects
+
+    class myDate extends Date {
+        constructor() {
+            super();
+        }
+
+        getFormattedDate() {
+            const months = ['Jan', 'Feb', 'Mar', etc.];
+            return this.getDate() + "-" + months[this.getMonth()] + "-" + this.getFullYear();
         }
     }
 
