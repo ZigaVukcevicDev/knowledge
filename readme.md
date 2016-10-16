@@ -1091,7 +1091,7 @@ the events (`publishers`).
         subscribe(topic, callback) {
 
             // Create the topic if not yet created
-            if(!this.topics[topic]) {
+            if (!this.topics[topic]) {
                 this.topics[topic] = [];
             }
 
@@ -1102,7 +1102,7 @@ the events (`publishers`).
         publish(topic, data) {
 
             // Returned false if the topic doesn't exist or there are no callbacks
-            if(!this.topics[topic] || this.topics[topic].length === 0) {
+            if (!this.topics[topic] || this.topics[topic].length === 0) {
                 return false;
             }
 
