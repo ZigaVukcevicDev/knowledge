@@ -355,6 +355,11 @@ with nested objects:
 
     // you now have a variable named 'age' with value 2
 
+You can also use it for shallow copy of object
+
+    const shallowSomeObject = {...someObject};
+    shallowSomeObject.newProperty = 'some string';
+
 ### Default parameters and values
 
     const link = function(color = 'red', url = 'http://some-url.com') {
