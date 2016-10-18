@@ -1192,6 +1192,8 @@ Resources
 -   [Decoupling JavaScript applications using the Publish/Subscribe
     pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)
 -   [Learn Git Branching](http://learngitbranching.js.org/)
+-   [ES6
+    Cheatsheet](https://es6cheatsheet.com/?key=mailing-list&utm_source=drip&utm_medium=email&utm_campaign=email-signup&__s=sxhqbosmavssxat1bhim)
 
 #### How to merge all md files
 
