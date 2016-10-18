@@ -11,6 +11,7 @@
     - [Understanding difference between function, method and constructor call (TODO)](#understanding-difference-between-function-method-and-constructor-call)
     - [Higher order functions (TODO)](#higher-order-functions)
     - [Function composition](#function-composition)
+    - [Prototype](#prototype)
 - [ECMAScript 6](#ecmascript-6)
     - [Import and export](#import-and-export)
     - [Template literals](#template-literals)

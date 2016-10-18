@@ -204,6 +204,11 @@ You can also use it for shallow copy of object
     const shallowSomeObject = {...someObject};
     shallowSomeObject.newProperty = 'some string';
 
+<!---
+// TODO: check diff between spread and destructuring
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
+-->
+
 ### Default parameters and values
 
     const link = function(color = 'red', url = 'http://some-url.com') {

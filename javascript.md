@@ -77,8 +77,15 @@ Functions can be combined to form new functions through function composition. Th
         return square(add(x, y));
     };
 
-<!---
 ### Prototype
 
-// TODO
--->
+Every JavaScript object has a prototype which is also an object. All JavaScript objects inherit their properties and methods from their prototype.
+
+    function Something() {} // note capital letter and fact that function is an object in JS
+
+    Something.prototype.bar = true; // this could also be a method/function
+    let something = new Something();
+
+    something.bar; // true
+    something instanceof Something; // true
+

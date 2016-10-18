@@ -16,6 +16,7 @@ Table of content
         call (TODO)](#understanding-difference-between-function-method-and-constructor-call)
     -   [Higher order functions (TODO)](#higher-order-functions)
     -   [Function composition](#function-composition)
+    -   [Prototype](#prototype)
 -   [ECMAScript 6](#ecmascript-6)
     -   [Import and export](#import-and-export)
     -   [Template literals](#template-literals)
@@ -157,11 +158,20 @@ functions `add` and `square`.
         return square(add(x, y));
     };
 
-<!---
 ### Prototype
 
-// TODO
--->
+Every JavaScript object has a prototype which is also an object. All
+JavaScript objects inherit their properties and methods from their
+prototype.
+
+    function Something() {} // note capital letter and fact that function is an object in JS
+
+    Something.prototype.bar = true; // this could also be a method/function
+    let something = new Something();
+
+    something.bar; // true
+    something instanceof Something; // true
+
 ECMAScript 6
 ------------
 
@@ -360,6 +370,10 @@ You can also use it for shallow copy of object
     const shallowSomeObject = {...someObject};
     shallowSomeObject.newProperty = 'some string';
 
+<!---
+// TODO: check diff between spread and destructuring
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
+-->
 ### Default parameters and values
 
     const link = function(color = 'red', url = 'http://some-url.com') {
