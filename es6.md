@@ -1,9 +1,5 @@
 ## ECMAScript 6
 
-<!---
-// TODO: check this samples: http://webapplog.com/es6/
--->
-
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
 ### Import and export
@@ -19,12 +15,12 @@ Export statement is used to export functions, objects or primitives from a given
 
 There are two different types of export:
 
-`Named` exports:
+a) `Named` exports:
 
     export { myFunction };           // exports a function declared earlier
     export const foo = Math.sqrt(2); // exports a constant
 
-`Default` exports (only one per script):
+b) `Default` exports (only one per script):
 
     export default function() {}
     export default function name() {}
@@ -307,4 +303,7 @@ getUser(login)
 ### Modules
 
 // TODO
+
+More at Swizec's blog: https://es6cheatsheet.com/?key=mailing-list&utm_source=drip&utm_medium=email&utm_campaign=email-signup&__s=sxhqbosmavssxat1bhim
+
 -->
