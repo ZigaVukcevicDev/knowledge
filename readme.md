@@ -757,6 +757,17 @@ Updates remote refs along with associated objects.
 
 Fetchs from and integrate with another repository or a local branch.
 
+### Reset
+
+    git reset --soft HEAD~1
+
+Flag `soft` will move HEAD 1 commit back and put changes as they were
+not commited yet, so you can commit them again.
+
+    git reset --hard HEAD~1
+
+Flag `hard` will move HEAD 1 commit back and delete changes.
+
 TypeScript
 ----------
 
