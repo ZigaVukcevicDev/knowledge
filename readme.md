@@ -768,6 +768,12 @@ not commited yet, so you can commit them again.
 
 Flag `hard` will move HEAD 1 commit back and delete changes.
 
+<!---
+
+Reset, Checkout, and Revert
+
+// TODO: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
+-->
 TypeScript
 ----------
 
