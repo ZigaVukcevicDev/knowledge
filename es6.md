@@ -2,7 +2,7 @@
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
-### Import and export (modules)
+### Modules (import and export)
 
 #### Export
 
