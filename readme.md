@@ -334,42 +334,34 @@ can be simplified to
 
 ### Destructuring assignment
 
-There is now a shortcut for assigning variables from objects or arrays.
+There is a shortcut for assigning variables from objects or arrays.
 
-In ES5:
+    const { something, somethingElse } = object;
 
-    var httpOptions = { timeout: 2000, isCache: true };
+Will produce the same as:
 
-    // later
-    var httpTimeout = httpOptions.timeout;
-    var httpCache = httpOptions.isCache;
+    const something = object.something;
+    const somethingElse = object.somethingElse;
 
-Now, in ES6, you can do:
+#### Spread operator
 
-    let httpOptions = { timeout: 2000, isCache: true };
+The spread syntax allows an expression to be expanded.
 
-    // later
-    let { timeout: httpTimeout, isCache: httpCache } = httpOptions;
+    function myFunction(x, y, z) {}
 
-And you will have the same result. The cool thing is that it also works
-with nested objects:
+    let args = [0, 1, 2];
+    myFunction(...args);
 
-    let httpOptions = { timeout: 2000, cache: { age: 2 } };
+Or
 
-    // later
-    let { cache: { age } } = httpOptions;
-
-    // you now have a variable named 'age' with value 2
+    let parts = ['shoulders', 'knees'];
+    let lyrics = ['head', ...parts, 'and', 'toes']; // ["head", "shoulders", "knees", "and", "toes"]
 
 You can also use it for shallow copy of object
 
     const shallowSomeObject = {...someObject};
     shallowSomeObject.newProperty = 'some string';
 
-<!---
-// TODO: check diff between spread and destructuring
-// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
--->
 ### Default parameters and values
 
     const link = function(color = 'red', url = 'http://some-url.com') {
@@ -465,7 +457,7 @@ block, we would need the explicit return:
 
 // TODO
 
-More at Swizec's blog: https://es6cheatsheet.com/?key=mailing-list&utm_source=drip&utm_medium=email&utm_campaign=email-signup&__s=sxhqbosmavssxat1bhim
+More at Swizec's blog: https://es6cheatsheet.com/
 
 -->
 React

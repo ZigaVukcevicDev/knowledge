@@ -163,47 +163,41 @@ function createPony() {
 
 ### Destructuring assignment
 
-There is now a shortcut for assigning variables from objects or arrays.
-
-In ES5:
+There is a shortcut for assigning variables from objects or arrays.
 
 ```
-var httpOptions = { timeout: 2000, isCache: true };
-
-// later
-var httpTimeout = httpOptions.timeout;
-var httpCache = httpOptions.isCache;
+const { something, somethingElse } = object;
 ```
 
-Now, in ES6, you can do:
+Will produce the same as:
 
 ```
-let httpOptions = { timeout: 2000, isCache: true };
-
-// later
-let { timeout: httpTimeout, isCache: httpCache } = httpOptions;
+const something = object.something;
+const somethingElse = object.somethingElse;
 ```
 
-And you will have the same result. The cool thing is that it also works with nested objects:
+#### Spread operator
+
+The spread syntax allows an expression to be expanded.
 
 ```
-let httpOptions = { timeout: 2000, cache: { age: 2 } };
+function myFunction(x, y, z) {}
 
-// later
-let { cache: { age } } = httpOptions;
+let args = [0, 1, 2];
+myFunction(...args);
+```
 
-// you now have a variable named 'age' with value 2
+Or
+
+```
+let parts = ['shoulders', 'knees'];
+let lyrics = ['head', ...parts, 'and', 'toes']; // ["head", "shoulders", "knees", "and", "toes"]
 ```
 
 You can also use it for shallow copy of object
 
     const shallowSomeObject = {...someObject};
     shallowSomeObject.newProperty = 'some string';
-
-<!---
-// TODO: check diff between spread and destructuring
-// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
--->
 
 ### Default parameters and values
 
@@ -304,6 +298,6 @@ getUser(login)
 
 // TODO
 
-More at Swizec's blog: https://es6cheatsheet.com/?key=mailing-list&utm_source=drip&utm_medium=email&utm_campaign=email-signup&__s=sxhqbosmavssxat1bhim
+More at Swizec's blog: https://es6cheatsheet.com/
 
 -->
