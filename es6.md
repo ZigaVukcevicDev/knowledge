@@ -2,7 +2,7 @@
 
 A `transpiler` takes ES6 source code and generates ES5 code that can run in every browser - e.g. Traceur or Babeljs.
 
-### Import and export
+### Import and export (modules)
 
 #### Export
 
@@ -288,16 +288,3 @@ getUser(login)
     })
     .then(rights => updateMenu(rights))
 ```
-
-<!---
-### Sets and Maps
-
-// TODO
-
-### Modules
-
-// TODO
-
-More at Swizec's blog: https://es6cheatsheet.com/
-
--->

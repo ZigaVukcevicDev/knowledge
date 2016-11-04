@@ -18,7 +18,7 @@ Table of content
     -   [Function composition](#function-composition)
     -   [Prototype](#prototype)
 -   [ECMAScript 6](#ecmascript-6)
-    -   [Import and export](#import-and-export)
+    -   [Modules (import and export)](#modules-import-and-export)
     -   [Template literals](#template-literals)
     -   [let](#let)
     -   [Constants](#constants)
@@ -28,8 +28,6 @@ Table of content
         values (TODO)](#default-parameters-and-values)
     -   [Promises](#promises)
     -   [Arrow functions](#arrow-functions)
-    -   [Sets and Maps (TODO)](#sets-and-maps)
-    -   [Modules (TODO)](#modules)
 -   [React](#react)
     -   [JSX](#jsx)
     -   [Properties](#properties)
@@ -178,7 +176,7 @@ ECMAScript 6
 A `transpiler` takes ES6 source code and generates ES5 code that can run
 in every browser - e.g. Traceur or Babeljs.
 
-### Import and export
+### Import and export (modules)
 
 #### Export
 
@@ -448,18 +446,6 @@ block, we would need the explicit return:
         })
         .then(rights => updateMenu(rights))
 
-<!---
-### Sets and Maps
-
-// TODO
-
-### Modules
-
-// TODO
-
-More at Swizec's blog: https://es6cheatsheet.com/
-
--->
 React
 -----
 
