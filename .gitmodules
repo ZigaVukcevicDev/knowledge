@@ -1,0 +1,3 @@
+[submodule "use-cases/scroll-with-throttle"]
+	path = use-cases/scroll-with-throttle
+	url = https://github.com/be-codified/scroll-with-throttle.git
