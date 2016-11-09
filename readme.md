@@ -798,6 +798,10 @@ git branch --merged (showing merged branches that had been merged at any time)
 git branch --no-merge (just the opposite as above command)
 git branch -d branch_name (deleting branch)
 
+### Submodules
+
+https://chrisjean.com/git-submodules-adding-using-removing-and-updating
+
 -->
 TypeScript
 ----------
