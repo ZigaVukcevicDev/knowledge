@@ -1,3 +1,6 @@
+[submodule "use-cases/websockets-chat"]
+	path = use-cases/websockets-chat
+	url = https://github.com/be-codified/use-case-websockets-chat.git
 [submodule "use-cases/scroll-with-throttle"]
 	path = use-cases/scroll-with-throttle
-	url = https://github.com/be-codified/scroll-with-throttle.git
+	url = https://github.com/be-codified/use-case-scroll-with-throttle.git
