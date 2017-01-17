@@ -829,25 +829,24 @@ repository
 
 ### Feature
 
-    git flow feature start new-branch-name
-
 This action creates a new feature branch based on 'develop' and switches
-to it.
+to it:
 
-    git flow feature finish existing-branch-name
+    git flow feature start new-branch-name
 
 Finish the development of a feature. This action performs the following:
 
--   merges MYFEATURE into `develop`
+-   merges `existing-branch-name` into `develop`
 -   removes the feature `branch`
 -   switches back to `develop branch`
 
 <!-- -->
 
-    git flow feature publish existing-branch-name
+    git flow feature finish existing-branch-name
 
-Are you developing a feature in collaboration? Publish a feature to the
-remote server so it can be used by other users.
+Publish a feature to the remote server so it can be used by other users:
+
+    git flow feature publish existing-branch-name
 
 TypeScript
 ----------
