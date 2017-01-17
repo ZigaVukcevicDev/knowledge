@@ -18,7 +18,7 @@ git flow init
 
 ### Feature
 
-This action creates a new feature branch based on 'develop' and switches to it:
+This action creates a new feature branch based on `develop` and switches to it:
 
 ```
 git flow feature start new-branch-name
@@ -26,8 +26,8 @@ git flow feature start new-branch-name
 
 Finish the development of a feature. This action performs the following:
 
-- merges `existing-branch-name` into `develop`
-- removes the feature `branch`
+- merges `existing-branch-name branch` into `develop branch`
+- removes the `existing-branch-name branch`
 - switches back to `develop branch`
 
 ```
