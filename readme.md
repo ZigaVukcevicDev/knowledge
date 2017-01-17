@@ -708,6 +708,9 @@ by `git add .`
 
 ### Commit
 
+Check how to properly write a git [commit
+message](http://chris.beams.io/posts/git-commit/).
+
     git commit -m "Some message"
 
 Records changes to the repository. By using `-m` flag, a custom message
