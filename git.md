@@ -35,6 +35,8 @@ Wildcards are supported, e.g. `git add '*.txt'` or you can add all files by `git
 
 ### Commit
 
+Check how to properly write a git [commit message](http://chris.beams.io/posts/git-commit/).
+
 ```
 git commit -m "Some message"
 ```
