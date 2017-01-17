@@ -24,15 +24,17 @@ git flow feature start new-branch-name
 
 This action creates a new feature branch based on 'develop' and switches to it.
 
+
 ```
 git flow feature finish existing-branch-name
 ```
 
-Finish the development of a feature. This action performs the following:`
+Finish the development of a feature. This action performs the following:
 
 - merges MYFEATURE into `develop`
 - removes the feature `branch`
-- switches back to `develop branch
+- switches back to `develop branch`
+
 
 ```
 git flow feature publish existing-branch-name
