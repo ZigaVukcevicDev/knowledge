@@ -39,6 +39,7 @@ Table of content
     -   [Lifecycle methods](#lifecycle-methods)
     -   [Animations](#animations)
 -   [Git (TODO)](#git)
+-   [Git Flow (TODO)](#git-flow)
 -   [TypeScript](#typescript)
 -   [Reactive programming](#reactive-programming)
     -   [Reactive programming in
@@ -680,6 +681,7 @@ Git
     // TODO: table of contents
 
     https://try.github.io/levels/1/challenges/18
+    https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 -->
 ### Init
 
@@ -804,11 +806,25 @@ git branch --merged (showing merged branches that had been merged at any time)
 git branch --no-merge (just the opposite as above command)
 git branch -d branch_name (deleting branch)
 
-
-
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating
 
 -->
+Git Flow
+--------
+
+<!---
+    // TODO: cheatsheet
+
+    http://danielkummer.github.io/git-flow-cheatsheet/
+-->
+### Feature
+
+    git flow feature start new-branch-name
+
+    git flow feature finish existing-branch-name
+
+    git flow feature publish existing-branch-name
+
 TypeScript
 ----------
 
@@ -1247,4 +1263,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
