@@ -33,6 +33,7 @@
     - [Lifecycle methods](#lifecycle-methods)
     - [Animations](#animations)
 - [Git (TODO)](#git)
+- [Git Flow (TODO)](#git-flow)
 - [TypeScript](#typescript)
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)

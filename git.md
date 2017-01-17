@@ -4,6 +4,7 @@
     // TODO: table of contents
 
     https://try.github.io/levels/1/challenges/18
+    https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 -->
 
 ### Init
@@ -154,8 +155,6 @@ git branch -m old_branch_name new_brach_name (renaming branch)
 git branch --merged (showing merged branches that had been merged at any time)
 git branch --no-merge (just the opposite as above command)
 git branch -d branch_name (deleting branch)
-
-
 
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating
 
