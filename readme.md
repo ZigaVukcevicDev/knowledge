@@ -1155,7 +1155,7 @@ The naming rules tell us to use `block--modifier` syntax.
 If there would be an `element` involved, we would use
 `block__elem--modifier` syntax.
 
-How to correctly work with grandchildren selectors:
+How to correctly work with children selectors:
 
 **HTML**
 
