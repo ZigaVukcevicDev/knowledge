@@ -1110,24 +1110,30 @@ CSS
 
 Blocks, Elements and Modifiers
 
-#### Block
+#### A) Block
 
-Standalone entity that is meaningful on its own. Examples:
-`header, container, menu, checkbox, input`
+Standalone entity that is meaningful on its own.
 
-#### Element
+Examples: `header`, `container`, `menu`, `checkbox`, `input`
+
+#### B) Element
 
 A part of a block that has no standalone meaning and is semantically
-tied to its block. Examples:
-`menu item, list item, checkbox caption, header title`
+tied to its block.
 
-#### Modifier
+Examples: `menu item`, `list item`, `checkbox caption`, `header title`
+
+#### C) Modifier
 
 A flag on a **block** or **element**. Use them to change appearance or
-behavior. Examples: disabled, highlighted, checked, fixed, size big,
-color yellow\`
+behavior.
 
-Usage:
+Examples: `disabled`, `highlighted`, `checked`, `fixed`, `size big`,
+`color yellow`
+
+------------------------------------------------------------------------
+
+#### Usage
 
 The naming rules tell us to use `block--modifier` syntax.
 
@@ -1168,7 +1174,9 @@ How to correctly work with grandchildren selectors:
     </div>
 
 Don't use `card__body__text__link` as this will quickly get out of hand.
-\#\# JSON Web Token
+
+JSON Web Token
+--------------
 
 JSON Web Token (JWT) is an open standard (RFC 7519) that defines a
 compact and self-contained way for securely transmitting information
