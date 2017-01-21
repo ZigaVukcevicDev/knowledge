@@ -14,4 +14,5 @@
 - [Decoupling JavaScript applications using the Publish/Subscribe pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)
 - [Learn Git Branching](http://learngitbranching.js.org/)
 - [ES6 Cheatsheet](https://es6cheatsheet.com)
-
+- [Battling BEM – 5 common problems and how to avoid them](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.or1bepw1m)
+- [BEM — Block Element Modifier](http://getbem.com/)

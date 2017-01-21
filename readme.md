@@ -49,6 +49,8 @@ Table of content
     -   [Components and directives](#components-and-directives)
     -   [ViewEncapsulation](#viewencapsulation)
     -   [HostListener](#hostlistener)
+-   [CSS](#css)
+    -   [BEM](#bem)
 -   [JSON Web Token](#json-web-token)
 -   [Design patterns](#design-patterns)
     -   [Subject/observer](#subject--observer)
@@ -1101,8 +1103,72 @@ the window object is instantiated outside Angular.
         }
     }
 
-JSON Web Token
---------------
+CSS
+---
+
+### BEM
+
+Blocks, Elements and Modifiers
+
+#### Block
+
+Standalone entity that is meaningful on its own. Examples:
+`header, container, menu, checkbox, input`
+
+#### Element
+
+A part of a block that has no standalone meaning and is semantically
+tied to its block. Examples:
+`menu item, list item, checkbox caption, header title`
+
+#### Modifier
+
+A flag on a **block** or **element**. Use them to change appearance or
+behavior. Examples: disabled, highlighted, checked, fixed, size big,
+color yellow\`
+
+Usage:
+
+The naming rules tell us to use `block--modifier` syntax.
+
+**HTML**
+
+    <button class="button button--state-success">
+        Success button
+    </button>
+    <button class="button button--state-danger">
+        Danger button
+    </button>
+
+**CSS**
+
+    .button { // rules for button }
+    .button--state-success { // rules for state-success modifier }
+    .button--state-danger  { // rules for state-danger modifier }
+
+If there would be an `element` involved, we would use
+`block__elem--modifier` syntax.
+
+How to correctly work with grandchildren selectors:
+
+**HTML**
+
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">Title text here</h2>
+        </div>
+        <div class="card__body">
+            <img class="card__img" src="some-img.png">
+
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur</p>
+            <p class="card__text">Adipiscing elit.
+                <a href="/somelink.html" class="card__link">Pellentesque amet</a>
+            </p>
+        </div>
+    </div>
+
+Don't use `card__body__text__link` as this will quickly get out of hand.
+\#\# JSON Web Token
 
 JSON Web Token (JWT) is an open standard (RFC 7519) that defines a
 compact and self-contained way for securely transmitting information
@@ -1286,7 +1352,10 @@ Resources
     pattern](http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/)
 -   [Learn Git Branching](http://learngitbranching.js.org/)
 -   [ES6 Cheatsheet](https://es6cheatsheet.com)
+-   [Battling BEM – 5 common problems and how to avoid
+    them](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.or1bepw1m)
+-   [BEM — Block Element Modifier](http://getbem.com/)
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
