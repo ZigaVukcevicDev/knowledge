@@ -121,6 +121,14 @@ git reset --hard HEAD~1
 
 Flag `hard` will move HEAD 1 commit back and delete changes.
 
+### Revert
+
+```
+git revert commitId
+```
+
+It will revert commit by adding a commit (so you can see the history of what has been reverted).
+
 ### Checkout
 
 ```
