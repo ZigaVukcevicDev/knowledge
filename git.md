@@ -9,27 +9,28 @@
 
 ### Init
 
+Initializes a repository in an existing directory. This will create `.git` hidden folder, a location where Git operates.
+
 ```
 git init
 ```
 
-Initializes a repository in an existing directory. This will create `.git` hidden folder, a location where Git operates.
 
 ### Status
+
+Shows the working tree status.
 
 ```
 git status
 ```
 
-Shows the working tree status.
-
 ### Add
+
+This command updates the index using the current content found in the working tree, to prepare the content `staged` for the next commit.
 
 ```
 git add some-file.txt
 ```
-
-This command updates the index using the current content found in the working tree, to prepare the content `staged` for the next commit.
 
 Wildcards are supported, e.g. `git add '*.txt'` or you can add all files by `git add .`
 
@@ -37,105 +38,106 @@ Wildcards are supported, e.g. `git add '*.txt'` or you can add all files by `git
 
 Check how to properly write a git [commit message](http://chris.beams.io/posts/git-commit/).
 
+Records changes to the repository. By using `-m` flag, a custom message will be added with commit.
+
 ```
 git commit -m "Some message"
 ```
 
-Records changes to the repository. By using `-m` flag, a custom message will be added with commit.
+By using `-a` flag, command will also do `git add .`
 
 ```
 git commit -a -m "Some message"
 ```
 
-By using `-a` flag, command will also do `git add .`
-
 ### Log
+
+Shows commit logs.
 
 ```
 git log
 ```
 
-Shows commit logs.
-
 ### Remote add
+
+Manages set of tracked repositories.
 
 ```
 git remote add origin some-url
 ```
 
-Manages set of tracked repositories.
-
 ### Push
+
+Updates remote refs along with associated objects. The flag `-u` tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do.
 
 ```
 git push -u origin master
 ```
 
-Updates remote refs along with associated objects. The flag `-u` tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do.
-
 ### Pull
+
+Fetches from and integrate with another repository or a local branch.
 
 ```
 git pull origin master
 ```
 
-Fetches from and integrate with another repository or a local branch.
-
 ### Diff
+
+Show changes between commits, commit and working tree, etc.
 
 ```
 git diff
 ```
 
-Show changes between commits, commit and working tree, etc.
+Shows difference of most recent commit, which is referred using the HEAD pointer.
 
 ```
 git diff HEAD
 ```
 
-Shows difference of most recent commit, which is referred using the HEAD pointer.
+Shows staged difference.
 
 ```
 git diff --staged
 ```
 
-Shows staged difference.
 
 ### Reset
+
+Unstages files.
 
 ```
 git reset some-file.txt
 ```
 
-Unstages files.
+Flag `soft` will move HEAD 1 commit back and put changes as they were not commited yet, so you can commit them again.
 
 ```
 git reset --soft HEAD~1
 ```
 
-Flag `soft` will move HEAD 1 commit back and put changes as they were not commited yet, so you can commit them again.
+Flag `hard` will move HEAD 1 commit back and delete changes.
 
 ```
 git reset --hard HEAD~1
 ```
 
-Flag `hard` will move HEAD 1 commit back and delete changes.
-
 ### Revert
+
+It will revert commit by adding a commit (so you can see the history of what has been reverted).
 
 ```
 git revert commitId
 ```
 
-It will revert commit by adding a commit (so you can see the history of what has been reverted).
-
 ### Checkout
+
+Changes file back to how it was at the last commit.
 
 ```
 git checkout -- some-file.txt
 ```
-
-Changes file back to how it was at the last commit.
 
 ### Submodules
 
