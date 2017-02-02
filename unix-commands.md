@@ -30,6 +30,14 @@ Copy the file `some-file-1.txt` to the file `some-file-2.txt` in the current wor
 cp some-file-1.txt some-file-2.txt
 ```
 
+#### locate
+
+Locates file(s) or folder(s).
+
+```
+   locate partial-name-of-file
+```
+
 <!---
     // TODO: cheatsheet
 

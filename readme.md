@@ -1361,6 +1361,12 @@ current working folder.
 
     cp some-file-1.txt some-file-2.txt
 
+#### locate
+
+Locates file(s) or folder(s).
+
+       locate partial-name-of-file
+
 <!---
     // TODO: cheatsheet
 
