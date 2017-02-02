@@ -48,4 +48,5 @@
 - [Design patterns](#design-patterns)
     - [Subject/observer](#subject--observer)
     - [Publish/subscribe](#publish--subscribe)
+- [Unix commands](#unix-commands)
 - [Not to neglect](#not-to-neglect)
