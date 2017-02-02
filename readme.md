@@ -687,23 +687,23 @@ Git
 -->
 ### Init
 
-    git init
-
 Initializes a repository in an existing directory. This will create
 `.git` hidden folder, a location where Git operates.
 
-### Status
+    git init
 
-    git status
+### Status
 
 Shows the working tree status.
 
-### Add
+    git status
 
-    git add some-file.txt
+### Add
 
 This command updates the index using the current content found in the
 working tree, to prepare the content `staged` for the next commit.
+
+    git add some-file.txt
 
 Wildcards are supported, e.g. `git add '*.txt'` or you can add all files
 by `git add .`
@@ -713,76 +713,83 @@ by `git add .`
 Check how to properly write a git [commit
 message](http://chris.beams.io/posts/git-commit/).
 
-    git commit -m "Some message"
-
 Records changes to the repository. By using `-m` flag, a custom message
 will be added with commit.
 
-    git commit -a -m "Some message"
+    git commit -m "Some message"
 
 By using `-a` flag, command will also do `git add .`
 
-### Log
+    git commit -a -m "Some message"
 
-    git log
+### Log
 
 Shows commit logs.
 
-### Remote add
+    git log
 
-    git remote add origin some-url
+### Remote add
 
 Manages set of tracked repositories.
 
-### Push
+    git remote add origin some-url
 
-    git push -u origin master
+### Push
 
 Updates remote refs along with associated objects. The flag `-u` tells
 Git to remember the parameters, so that next time we can simply run git
 push and Git will know what to do.
 
-### Pull
+    git push -u origin master
 
-    git pull origin master
+### Pull
 
 Fetches from and integrate with another repository or a local branch.
 
-### Diff
+    git pull origin master
 
-    git diff
+### Diff
 
 Show changes between commits, commit and working tree, etc.
 
-    git diff HEAD
+    git diff
 
 Shows difference of most recent commit, which is referred using the HEAD
 pointer.
 
-    git diff --staged
+    git diff HEAD
 
 Shows staged difference.
 
-### Reset
+    git diff --staged
 
-    git reset some-file.txt
+### Reset
 
 Unstages files.
 
-    git reset --soft HEAD~1
+    git reset some-file.txt
 
 Flag `soft` will move HEAD 1 commit back and put changes as they were
 not commited yet, so you can commit them again.
 
-    git reset --hard HEAD~1
+    git reset --soft HEAD~1
 
 Flag `hard` will move HEAD 1 commit back and delete changes.
 
+    git reset --hard HEAD~1
+
+### Revert
+
+It will revert commit by adding a commit (so you can see the history of
+what has been reverted).
+
+    git revert commitId
+
 ### Checkout
 
-    git checkout -- some-file.txt
-
 Changes file back to how it was at the last commit.
+
+    git checkout -- some-file.txt
 
 ### Submodules
 
@@ -1325,6 +1332,13 @@ the events (`publishers`).
 The goal is to avoid dependencies between `publisher` and `subscriber`
 (so called `decoupling`).
 
+Unix commands
+-------------
+
+### Basic
+
+// TODO
+
 Not to neglect
 --------------
 
@@ -1366,4 +1380,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md unix-commands.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
