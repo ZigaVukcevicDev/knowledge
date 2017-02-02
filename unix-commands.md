@@ -32,10 +32,10 @@ cp some-file-1.txt some-file-2.txt
 
 #### locate
 
-Locates file(s) or folder(s).
+Locates file or folder.
 
 ```
-locate partial-name-of-file
+locate partial-name
 ```
 
 <!---

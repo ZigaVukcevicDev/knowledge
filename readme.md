@@ -1363,9 +1363,9 @@ current working folder.
 
 #### locate
 
-Locates file(s) or folder(s).
+Locates file or folder.
 
-    locate partial-name-of-file
+    locate partial-name
 
 <!---
     // TODO: cheatsheet
