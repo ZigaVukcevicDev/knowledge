@@ -2,8 +2,6 @@
 
 ### Basic
 
-// TODO
-
 #### cat
 
 Show contents of the file.
