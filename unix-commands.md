@@ -35,7 +35,7 @@ cp some-file-1.txt some-file-2.txt
 Locates file(s) or folder(s).
 
 ```
-   locate partial-name-of-file
+locate partial-name-of-file
 ```
 
 <!---

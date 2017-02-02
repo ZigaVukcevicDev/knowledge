@@ -1365,7 +1365,7 @@ current working folder.
 
 Locates file(s) or folder(s).
 
-       locate partial-name-of-file
+    locate partial-name-of-file
 
 <!---
     // TODO: cheatsheet
