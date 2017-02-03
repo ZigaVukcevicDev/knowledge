@@ -1,6 +1,6 @@
 ## Unix commands
 
-### Basic
+### Basics
 
 #### cat
 
@@ -10,7 +10,15 @@ Show contents of the file.
 cat some-file.txt
 ```
 
-##### cd
+#### pwd
+
+Show the name of the current working directory.
+
+```
+pwd
+```
+
+#### cd
 
 Change the current working folder.
 
@@ -30,6 +38,17 @@ Copy the file `some-file-1.txt` to the file `some-file-2.txt` in the current wor
 cp some-file-1.txt some-file-2.txt
 ```
 
+#### mv
+
+Move or rename files.
+
+```
+mv some-file-1.txt some-file-2.txt    // Changes the names from "some-file-1.txt" to "some-file-2.txt"
+mv /some-folder/some-file .           // Move the file from "some-file" from the folder 
+                                         "/some-folder" to the current working folder.
+```
+
+
 #### locate
 
 Locates file or folder.
@@ -38,8 +57,10 @@ Locates file or folder.
 locate partial-name
 ```
 
-<!---
-    // TODO: cheatsheet
+#### ll
 
-    http://www.comptechdoc.org/os/linux/usersguide/linux_ugbasics.html
--->
+List all files in the current working directory in long listing format showing permissions, ownership, size, and time and date stamp.
+
+```
+ll
+```
