@@ -1372,8 +1372,15 @@ current working folder.
 Move or rename files.
 
     mv some-file-1.txt some-file-2.txt    // Changes the names from "some-file-1.txt" to "some-file-2.txt"
-    mv /some-folder/some-file .           // Move the file from "some-file" from the folder 
-                                             "/some-folder" to the current working folder.
+    mv /some-folder/some-file .           // Move the file from "some-file" from the folder "/some-folder" 
+                                             to the current working folder.
+
+#### rm
+
+Remove the folder. Flag means remove recursively (deleting everything in
+folder)
+
+    rm -r folder
 
 #### locate
 
