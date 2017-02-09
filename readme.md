@@ -1411,7 +1411,8 @@ Running services
 
 or
 
-\``brew services start mongodb brew services stop mongodb`
+    brew services start mongodb
+    brew services stop mongodb
 
 Client
 ------

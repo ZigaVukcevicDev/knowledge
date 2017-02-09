@@ -10,7 +10,7 @@ sudo service mongodb restart
 
 or
 
-````
+```
 brew services start mongodb
 brew services stop mongodb
 ```
