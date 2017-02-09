@@ -71,3 +71,9 @@ List all files in the current working directory in long listing format showing p
 ```
 ll
 ```
+
+Using flag `a` will also show hidden files/folders.
+
+```
+ll -a
+```

@@ -56,6 +56,7 @@ Table of content
     -   [Subject/observer](#subject--observer)
     -   [Publish/subscribe](#publish--subscribe)
 -   [Unix commands](#unix-commands)
+-   [Mongo](#mongo)
 -   [Not to neglect](#not-to-neglect)
 
 Code commenting
@@ -1395,6 +1396,49 @@ showing permissions, ownership, size, and time and date stamp.
 
     ll
 
+Using flag `a` will also show hidden files/folders.
+
+    ll -a
+
+Mongo
+-----
+
+    sudo service mongodb start
+    sudo service mongodb stop
+    sudo service mongodb restart
+
+    brew services start mongodb
+    brew services stop mongodb
+
+Client
+------
+
+    mongo
+
+### Showing databases (with at least one record)
+
+    show dbs
+
+### Using specific database
+
+    use test
+
+### Showing collections
+
+    show collections
+
+### Create collection
+
+    db.createCollection("users", { autoIndexID : true })
+
+### Insert document
+
+    db.users.insert({"name" : "ziga"})
+
+### Showing documents
+
+    db.users.find().pretty()
+
 Not to neglect
 --------------
 
@@ -1436,4 +1480,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md unix-commands.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md unix-commands.md mongo.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
