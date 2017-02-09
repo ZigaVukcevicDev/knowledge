@@ -4,3 +4,6 @@
 [submodule "use-cases/socket-io-chat"]
 	path = use-cases/socket-io-chat
 	url = https://github.com/be-codified/use-case-socket-io-chat.git
+[submodule "use-cases/scrape-cats"]
+	path = use-cases/scrape-cats
+	url = git@github.com:be-codified/use-case-scrape-cats.git
