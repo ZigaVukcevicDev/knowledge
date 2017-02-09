@@ -793,6 +793,21 @@ Changes file back to how it was at the last commit.
 
     git checkout -- some-file.txt
 
+### Tags
+
+Listing tags
+
+    git tag
+
+Creating annotated tag
+
+    git tag -a v1.4 -m "my version 1.4"
+    git push origin --tags
+
+Deleting tag
+
+    git tag -d v1.4
+
 ### Submodules
 
 Go to root folder.
@@ -1399,51 +1414,6 @@ showing permissions, ownership, size, and time and date stamp.
 Using flag `a` will also show hidden files/folders.
 
     ll -a
-
-Mongo
------
-
-Running services
-
-    sudo service mongodb start
-    sudo service mongodb stop
-    sudo service mongodb restart
-
-or
-
-    brew services start mongodb
-    brew services stop mongodb
-
-Client
-------
-
-Run client
-
-    mongo
-
-### Showing databases (with at least one record)
-
-    show dbs
-
-### Using specific database
-
-    use myDatabase
-
-### Showing collections
-
-    show collections
-
-### Create collection
-
-    db.createCollection("users", { autoIndexID : true })
-
-### Insert document
-
-    db.users.insert({"name" : "John"})
-
-### Showing documents
-
-    db.users.find().pretty()
 
 Not to neglect
 --------------
