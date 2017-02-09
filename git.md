@@ -139,6 +139,27 @@ Changes file back to how it was at the last commit.
 git checkout -- some-file.txt
 ```
 
+### Tags
+
+Listing tags
+
+```
+git tag
+```
+
+Creating annotated tag
+
+```
+git tag -a v1.4 -m "my version 1.4"
+git push origin --tags
+```
+
+Deleting tag
+
+```
+git tag -d v1.4
+```
+
 ### Submodules
 
 Go to root folder.
