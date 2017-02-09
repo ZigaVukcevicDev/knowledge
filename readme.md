@@ -1403,15 +1403,20 @@ Using flag `a` will also show hidden files/folders.
 Mongo
 -----
 
+Running services
+
     sudo service mongodb start
     sudo service mongodb stop
     sudo service mongodb restart
 
-    brew services start mongodb
-    brew services stop mongodb
+or
+
+\``brew services start mongodb brew services stop mongodb`
 
 Client
 ------
+
+Run client
 
     mongo
 
@@ -1421,7 +1426,7 @@ Client
 
 ### Using specific database
 
-    use test
+    use myDatabase
 
 ### Showing collections
 
@@ -1433,7 +1438,7 @@ Client
 
 ### Insert document
 
-    db.users.insert({"name" : "ziga"})
+    db.users.insert({"name" : "John"})
 
 ### Showing documents
 

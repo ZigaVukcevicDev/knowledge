@@ -1,14 +1,24 @@
 ## Mongo
+
+Running services
+
 ```
 sudo service mongodb start
 sudo service mongodb stop
 sudo service mongodb restart
+```
 
+or
+
+````
 brew services start mongodb
 brew services stop mongodb
 ```
 
 ## Client
+
+Run client
+
 ```
 mongo
 ```
@@ -20,7 +30,7 @@ show dbs
 
 ### Using specific database
 ```
-use test
+use myDatabase
 ```
 
 ### Showing collections
@@ -35,7 +45,7 @@ db.createCollection("users", { autoIndexID : true })
 
 ### Insert document
 ```
-db.users.insert({"name" : "ziga"})
+db.users.insert({"name" : "John"})
 ```
 
 ### Showing documents
