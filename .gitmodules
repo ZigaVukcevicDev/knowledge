@@ -7,3 +7,6 @@
 [submodule "use-cases/scrape-cats"]
 	path = use-cases/scrape-cats
 	url = git@github.com:be-codified/use-case-scrape-cats.git
+[submodule "use-cases/work-bot"]
+	path = use-cases/work-bot
+	url = git@github.com:be-codified/use-case-work-bot.git
