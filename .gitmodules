@@ -1,9 +1,9 @@
 [submodule "case-studies/scroll-with-throttle"]
 	path = case-studies/scroll-with-throttle
-	url = https://github.com/be-codified/case-study-scroll-with-throttle.git
+	url = git@github.com:be-codified/case-study-scroll-with-throttle.git
 [submodule "case-studies/socket-io-chat"]
 	path = case-studies/socket-io-chat
-	url = https://github.com/be-codified/case-study-socket-io-chat.git
+	url = git@github.com:be-codified/case-study-socket-io-chat.git
 [submodule "case-studies/scrape-cats"]
 	path = case-studies/scrape-cats
 	url = git@github.com:be-codified/case-study-scrape-cats.git
