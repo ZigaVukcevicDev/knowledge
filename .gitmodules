@@ -1,12 +1,12 @@
-[submodule "use-cases/scroll-with-throttle"]
-	path = use-cases/scroll-with-throttle
-	url = https://github.com/be-codified/use-case-scroll-with-throttle.git
-[submodule "use-cases/socket-io-chat"]
-	path = use-cases/socket-io-chat
-	url = https://github.com/be-codified/use-case-socket-io-chat.git
-[submodule "use-cases/scrape-cats"]
-	path = use-cases/scrape-cats
-	url = git@github.com:be-codified/use-case-scrape-cats.git
-[submodule "use-cases/work-bot"]
-	path = use-cases/work-bot
-	url = git@github.com:be-codified/use-case-work-bot.git
+[submodule "case-studies/scroll-with-throttle"]
+	path = case-studies/scroll-with-throttle
+	url = https://github.com/be-codified/case-study-scroll-with-throttle.git
+[submodule "case-studies/socket-io-chat"]
+	path = case-studies/socket-io-chat
+	url = https://github.com/be-codified/case-study-socket-io-chat.git
+[submodule "case-studies/scrape-cats"]
+	path = case-studies/scrape-cats
+	url = git@github.com:be-codified/case-study-scrape-cats.git
+[submodule "case-studies/work-bot"]
+	path = case-studies/work-bot
+	url = git@github.com:be-codified/case-study-work-bot.git
