@@ -133,7 +133,7 @@ git checkout -- some-file.txt
 
 ### Branches
 
-Creates new branch.
+Creates new branch
 
 ```
 git branch new_branch_name
@@ -151,7 +151,7 @@ Checkouts to new branch
 git checkout new_branch_name
 ```
 
-Merges branch into checkouted branch (e.g.: first checkout to master branch, then merge develop branch into)
+Merges branch into checkouted branch (e.g. first checkout to master branch, then merge develop branch into)
 
 ```
 git merge name_of_branch
