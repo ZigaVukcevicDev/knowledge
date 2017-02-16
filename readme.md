@@ -681,12 +681,6 @@ https://facebook.github.io/react-native/docs/animated.html
 Git
 ---
 
-<!---
-    // TODO: table of contents
-
-    https://try.github.io/levels/1/challenges/18
-    https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
--->
 ### Init
 
 Initializes a repository in an existing directory. This will create
@@ -793,6 +787,29 @@ Changes file back to how it was at the last commit.
 
     git checkout -- some-file.txt
 
+### Branches
+
+Creates new branch.
+
+    git branch new_branch_name
+
+Deletes branch
+
+    git branch -d branch_name
+
+Checkouts to new branch
+
+    git checkout new_branch_name
+
+Merges branch into checkouted branch (e.g.: first checkout to master
+branch, then merge develop branch into)
+
+    git merge name_of_branch
+
+Shows merged branches that had been merged at any time
+
+    git branch --merged
+
 ### Tags
 
 Listing tags
@@ -816,7 +833,8 @@ Go to root folder.
 
 <!---
 
-// TODO
+// TODO: table of contents
+https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
 ### Merge
 
@@ -824,16 +842,6 @@ git merge --abort
 
 Reset, Checkout, and Revert
 https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
-
-Check and document those commands.
-
-git branch new_branch_name
-git checkout new_branch_name
-git merge name_of_branch (checkout to master to merge development branch)
-git branch -m old_branch_name new_brach_name (renaming branch)
-git branch --merged (showing merged branches that had been merged at any time)
-git branch --no-merge (just the opposite as above command)
-git branch -d branch_name (deleting branch)
 
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating
 
@@ -1414,6 +1422,51 @@ showing permissions, ownership, size, and time and date stamp.
 Using flag `a` will also show hidden files/folders.
 
     ll -a
+
+Mongo
+-----
+
+Running services
+
+    sudo service mongodb start
+    sudo service mongodb stop
+    sudo service mongodb restart
+
+or
+
+    brew services start mongodb
+    brew services stop mongodb
+
+Client
+------
+
+Run client
+
+    mongo
+
+### Showing databases (with at least one record)
+
+    show dbs
+
+### Using specific database
+
+    use myDatabase
+
+### Showing collections
+
+    show collections
+
+### Create collection
+
+    db.createCollection("users", { autoIndexID : true })
+
+### Insert document
+
+    db.users.insert({"name" : "John"})
+
+### Showing documents
+
+    db.users.find().pretty()
 
 Not to neglect
 --------------

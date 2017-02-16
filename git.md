@@ -1,12 +1,5 @@
 ## Git
 
-<!---
-    // TODO: table of contents
-
-    https://try.github.io/levels/1/challenges/18
-    https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
--->
-
 ### Init
 
 Initializes a repository in an existing directory. This will create `.git` hidden folder, a location where Git operates.
@@ -14,7 +7,6 @@ Initializes a repository in an existing directory. This will create `.git` hidde
 ```
 git init
 ```
-
 
 ### Status
 
@@ -139,6 +131,38 @@ Changes file back to how it was at the last commit.
 git checkout -- some-file.txt
 ```
 
+### Branches
+
+Creates new branch.
+
+```
+git branch new_branch_name
+```
+
+Deletes branch
+
+```
+git branch -d branch_name
+```
+
+Checkouts to new branch
+
+```
+git checkout new_branch_name
+```
+
+Merges branch into checkouted branch (e.g.: first checkout to master branch, then merge develop branch into)
+
+```
+git merge name_of_branch
+```
+
+Shows merged branches that had been merged at any time
+
+```
+git branch --merged
+```
+
 ### Tags
 
 Listing tags
@@ -170,7 +194,8 @@ git submodule add some-repo-url some-folder
 
 <!---
 
-// TODO
+// TODO: table of contents
+https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
 ### Merge
 
@@ -178,16 +203,6 @@ git merge --abort
 
 Reset, Checkout, and Revert
 https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
-
-Check and document those commands.
-
-git branch new_branch_name
-git checkout new_branch_name
-git merge name_of_branch (checkout to master to merge development branch)
-git branch -m old_branch_name new_brach_name (renaming branch)
-git branch --merged (showing merged branches that had been merged at any time)
-git branch --no-merge (just the opposite as above command)
-git branch -d branch_name (deleting branch)
 
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating
 
