@@ -10,3 +10,6 @@
 [submodule "case-studies/work-bot"]
 	path = case-studies/work-bot
 	url = git@github.com:be-codified/case-study-work-bot.git
+[submodule "case-studies/angular-v1"]
+	path = case-studies/angular-v1
+	url = git@github.com:be-codified/case-study-angular-v1.git
