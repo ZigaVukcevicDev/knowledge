@@ -44,10 +44,28 @@ git commit -a -m "Some message"
 
 ### Log
 
-Shows commit logs.
+Shows local commit logs.
 
 ```
 git log
+```
+
+Shows remote commit logs.
+
+```
+git log origin/master
+```
+
+Shows local commit logs in one line / commit.
+
+```
+git log --oneline
+```
+
+Shows local commit logs with graphic appearance.
+
+```
+git log --graph
 ```
 
 ### Remote add
@@ -93,7 +111,15 @@ Shows staged difference.
 ```
 git diff --staged
 ```
+### Clean
 
+Removes untracked files from the working tree.
+
+```
+git clean -f
+```
+
+Flag `f` will force deletion, otherwise git will refuse it.
 
 ### Reset
 
@@ -161,6 +187,14 @@ Shows merged branches that had been merged at any time
 
 ```
 git branch --merged
+```
+
+### Clone
+
+It will clone remote repository to local one.
+
+```
+git clone some-url
 ```
 
 ### Tags
