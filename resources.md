@@ -16,3 +16,4 @@
 - [ES6 Cheatsheet](https://es6cheatsheet.com)
 - [Battling BEM – 5 common problems and how to avoid them](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.or1bepw1m)
 - [BEM — Block Element Modifier](http://getbem.com/)
+- [Learn git branching](http://learngitbranching.js.org/)
