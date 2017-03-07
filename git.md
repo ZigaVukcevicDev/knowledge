@@ -197,6 +197,20 @@ It will clone remote repository to local one.
 git clone some-url
 ```
 
+### Remote
+
+Set remote repository
+
+```
+git remote add origin some-url
+```
+
+Show remote repository
+
+```
+git remote -v
+```
+
 ### Tags
 
 Listing tags
