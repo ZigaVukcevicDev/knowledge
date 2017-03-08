@@ -68,6 +68,12 @@ Shows local commit logs with graphic appearance.
 git log --graph
 ```
 
+Shows files changed in local commit logs
+
+```
+git log --name-only
+```
+
 ### Remote add
 
 Manages set of tracked repositories.
