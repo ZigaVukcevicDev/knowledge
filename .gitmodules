@@ -13,3 +13,6 @@
 [submodule "case-studies/angular-v1"]
 	path = case-studies/angular-v1
 	url = git@github.com:be-codified/case-study-angular-v1.git
+[submodule "case-studies/swimming-practice"]
+	path = case-studies/swimming-practice
+	url = git@github.com:be-codified/case-study-swimming-practice.git
