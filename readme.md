@@ -720,9 +720,25 @@ By using `-a` flag, command will also do `git add .`
 
 ### Log
 
-Shows commit logs.
+Shows local commit logs.
 
     git log
+
+Shows remote commit logs.
+
+    git log origin/master
+
+Shows local commit logs in one line / commit.
+
+    git log --oneline
+
+Shows local commit logs with graphic appearance.
+
+    git log --graph
+
+Shows files changed in local commit logs
+
+    git log --name-only
 
 ### Remote add
 
@@ -758,6 +774,14 @@ pointer.
 Shows staged difference.
 
     git diff --staged
+
+### Clean
+
+Removes untracked files from the working tree.
+
+    git clean -f
+
+Flag `f` will force deletion, otherwise git will refuse it.
 
 ### Reset
 
@@ -809,6 +833,22 @@ branch, then merge develop branch into)
 Shows merged branches that had been merged at any time
 
     git branch --merged
+
+### Clone
+
+It will clone remote repository to local one.
+
+    git clone some-url
+
+### Remote
+
+Set remote repository
+
+    git remote add origin some-url
+
+Show remote repository
+
+    git remote -v
 
 ### Tags
 
@@ -1506,6 +1546,7 @@ Resources
 -   [Battling BEM – 5 common problems and how to avoid
     them](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.or1bepw1m)
 -   [BEM — Block Element Modifier](http://getbem.com/)
+-   [Learn git branching](http://learngitbranching.js.org/)
 
 #### How to merge all md files
 
