@@ -9,7 +9,7 @@
     'use strict';
 
     angular
-        .module('Pamoja')
+        .module('SomeModule')
         .component('avatar', {
             controller: 'AvatarController',
             controllerAs: 'avatarCtrl',
@@ -32,7 +32,7 @@
     'use strict';
 
     angular
-        .module('Pamoja')
+        .module('SomeModule')
         .controller('AvatarController', AvatarController);
 
     function AvatarController() {
@@ -48,7 +48,7 @@
 })();
 ```
 
-#### View file (avatar.controller.js)
+#### View file (avatar.component.html)
 
 ```
 <div 
