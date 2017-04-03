@@ -1091,25 +1091,55 @@ Angular 1.5
 
 ### Components
 
+#### Component file (e.g. avatar.component.js)
+
+    (function() {
+        'use strict';
+
+        angular
+            .module('SomeModule')
+            .component('avatar', {
+                controller: 'AvatarController',
+                controllerAs: 'avatarCtrl',
+                template: function($templateCache) {
+                    return $templateCache.get('./app/platform/components/avatar/views/avatar.component.html');
+                },
+                transclude: true,
+                bindings: {
+                    url: '@'
+                }
+            });
+
+    })();
+
+#### Controller file (e.g. avatar.controller.js)
+
     (function () {
         'use strict';
-            angular
-                .module('SomeModule')
-                .controller('SomeControllerName', SomeController);
 
-                function SomeController() {
-                    var vm = this;
+        angular
+            .module('SomeModule')
+            .controller('AvatarController', AvatarController);
 
-                    vm.something = {};
-                    vm.someFunction = someFunction;
+        function AvatarController() {
+            var vm = this;
+            vm.userAvatar = {};
+            vm.hasAvatar = hasAvatar;
 
-                    function someFunction() {
-                        var something = false;
-                        return something;
-                    }
-                }
-        
+            function hasAvatar() {
+                return !_.isUndefined(vm.url) && !_.isNull(vm.url) && vm.url.length > 0;
+            }
+        }
+
     })();
+
+#### View file (e.g. avatar.component.html)
+
+    <div 
+        class="user__avatar" 
+        ng-if="avatarCtrl.userAvatar"
+        ng-style="{'background-image': avatarCtrl.hasAvatar() ? 'url(' + avatarCtrl.url + ')' : 'url(/images/profile-avatar-placeholder.png)'}">
+        </div>
 
 Angular 2
 ---------
