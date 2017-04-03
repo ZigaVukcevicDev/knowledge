@@ -1102,9 +1102,9 @@ Angular 1.5
             .module('SomeModule')
             .component('avatar', {
                 controller: 'AvatarController',
-                controllerAs: 'avatarCtrl',
+                controllerAs: 'avatarCtrl', // alias for controller name in view instead of $ctrl
                 template: function($templateCache) {
-                    return $templateCache.get('./app/platform/components/avatar/views/avatar.component.html');
+                    return $templateCache.get('./some-path/avatar.component.html');
                 },
                 transclude: true,
                 bindings: {
@@ -1114,9 +1114,11 @@ Angular 1.5
 
     })();
 
-#### Controller file (e.g. avatar.controller.js)
+#### Controller file
 
-    (function () {
+*e.g. avatar.controller.js*
+
+    (function() {
         'use strict';
 
         angular
@@ -1129,19 +1131,25 @@ Angular 1.5
             vm.hasAvatar = hasAvatar;
 
             function hasAvatar() {
-                return !_.isUndefined(vm.url) && !_.isNull(vm.url) && vm.url.length > 0;
+                return !_.isUndefined(vm.url) && 
+                       !_.isNull(vm.url) && 
+                       vm.url.length > 0;
             }
         }
 
     })();
 
-#### View file (e.g. avatar.component.html)
+#### View file
+
+*e.g. avatar.component.html*
 
     <div 
         class="user__avatar" 
         ng-if="avatarCtrl.userAvatar"
-        ng-style="{'background-image': avatarCtrl.hasAvatar() ? 'url(' + avatarCtrl.url + ')' : 'url(/images/profile-avatar-placeholder.png)'}">
-        </div>
+        ng-style="{'background-image': avatarCtrl.hasAvatar() ? 
+                   'url(' + avatarCtrl.url + ')' : 
+                   'url(/images/profile-avatar-placeholder.png)'}
+    "></div>
 
 Angular 2
 ---------
