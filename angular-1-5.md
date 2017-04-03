@@ -2,7 +2,7 @@
 
 ### Components
 
-#### Component file (avatar.component.js)
+#### Component file (e.g. avatar.component.js)
 
 ```
 (function() {
@@ -25,7 +25,7 @@
 })();
 ```
 
-#### Controller file (avatar.controller.js)
+#### Controller file (e.g. avatar.controller.js)
 
 ```
 (function () {
@@ -48,7 +48,7 @@
 })();
 ```
 
-#### View file (avatar.component.html)
+#### View file (e.g. avatar.component.html)
 
 ```
 <div 
