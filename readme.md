@@ -45,6 +45,7 @@ Table of content
     -   [Reactive programming in
         Angular 2](#reactive-programming-in-angular2)
     -   [Subject](#subject)
+-   [Angular 1.5 (TODO)](#angular-1-5)
 -   [Angular 2](#angular-2)
     -   [Components and directives](#components-and-directives)
     -   [ViewEncapsulation](#viewencapsulation)
@@ -1085,6 +1086,30 @@ items it observes by reemitting them, and it can also emit new items.
       console.log(spinner); // should output false
     });
 
+Angular 1.5
+-----------
+
+### Components
+
+    (function () {
+      'use strict';
+
+      angular
+          .module('SomeModuleName')
+          .controller('AvatarController', AvatarController);
+
+      function AvatarController() {
+        var vm = this;
+        vm.userAvatar = {};
+        vm.hasAvatar = hasAvatar;
+
+        function hasAvatar() {
+          return !_.isUndefined(vm.url) && !_.isNull(vm.url) && vm.url.length > 0;
+        }
+      }
+
+    })();
+
 Angular 2
 ---------
 
@@ -1550,4 +1575,4 @@ Resources
 
 #### How to merge all md files
 
-`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular2.md css.md jwt.md design-patterns.md unix-commands.md mongo.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`
+`pandoc toc.md code-commenting.md javascript.md es6.md react.md git.md git-flow.md typescript.md reactive-programming.md angular-1-5.md angular-2.md css.md jwt.md design-patterns.md unix-commands.md mongo.md not-to-neglect.md resources.md note.md -f markdown -t markdown -s -o readme.md`

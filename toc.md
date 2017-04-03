@@ -38,6 +38,7 @@
 - [Reactive programming](#reactive-programming)
     - [Reactive programming in Angular 2](#reactive-programming-in-angular2)
     - [Subject](#subject)
+- [Angular 1.5 (TODO)](#angular-1-5)
 - [Angular 2](#angular-2)
     - [Components and directives](#components-and-directives)
     - [ViewEncapsulation](#viewencapsulation)
