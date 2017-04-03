@@ -3,7 +3,7 @@
 ### Components
 
 #### Component file 
-__e.g. avatar.component.js__
+_e.g. avatar.component.js_
 
 ```
 (function() {
