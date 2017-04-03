@@ -3,23 +3,25 @@
 ### Components
 
 
+
 ```
 (function () {
-  'use strict';
+    'use strict';
+        angular
+            .module('SomeModule')
+            .controller('SomeControllerName', SomeController);
 
-  angular
-      .module('SomeModuleName')
-      .controller('AvatarController', AvatarController);
+            function SomeController() {
+                var vm = this;
 
-  function AvatarController() {
-    var vm = this;
-    vm.userAvatar = {};
-    vm.hasAvatar = hasAvatar;
+                vm.something = {};
+                vm.someFunction = someFunction;
 
-    function hasAvatar() {
-      return !_.isUndefined(vm.url) && !_.isNull(vm.url) && vm.url.length > 0;
-    }
-  }
-
+                function someFunction() {
+                    var something = false;
+                    return something;
+                }
+            }
+    
 })();
 ```
