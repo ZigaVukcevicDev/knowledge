@@ -1091,7 +1091,9 @@ Angular 1.5
 
 ### Components
 
-#### Component file (e.g. avatar.component.js)
+#### Component file
+
+**e.g. avatar.component.js**
 
     (function() {
         'use strict';
