@@ -1182,7 +1182,10 @@ initialization work of a controller.
 
 #### \$postLink()
 
-// TODO \#\# Angular 2
+// TODO
+
+Angular 2
+---------
 
 ### Components and directives
 
