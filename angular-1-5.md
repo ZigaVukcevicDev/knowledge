@@ -64,3 +64,35 @@ _e.g. avatar.component.html_
                'url(/images/profile-avatar-placeholder.png)'}
 "></div>
 ```
+
+### Lifecycle Hooks
+
+#### $onInit()
+
+This lifecycle hook will be executed when all controllers on an __element have been constructed__ and __after their bindings are initialized__. This hook is meant to be used for any kind of initialization work of a controller.
+
+```
+    function SomeController() {
+        var vm = this;
+    
+        vm.$onInit = function() {
+            vm.foo = 'bar';
+            vm.bar = 'foo';    
+        };
+    }
+};
+```
+
+// TODO
+
+#### $onChanges()
+
+// TODO
+
+#### $onDestroy()
+
+// TODO
+
+#### $postLink()
+
+// TODO

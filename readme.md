@@ -1151,8 +1151,38 @@ Angular 1.5
                    'url(/images/profile-avatar-placeholder.png)'}
     "></div>
 
-Angular 2
----------
+### Lifecycle Hooks
+
+#### \$onInit()
+
+This lifecycle hook will be executed when all controllers on an
+**element have been constructed** and **after their bindings are
+initialized**. This hook is meant to be used for any kind of
+initialization work of a controller.
+
+        function SomeController() {
+            var vm = this;
+        
+            vm.$onInit = function() {
+                vm.foo = 'bar';
+                vm.bar = 'foo';    
+            };
+        }
+    };
+
+// TODO
+
+#### \$onChanges()
+
+// TODO
+
+#### \$onDestroy()
+
+// TODO
+
+#### \$postLink()
+
+// TODO \#\# Angular 2
 
 ### Components and directives
 
