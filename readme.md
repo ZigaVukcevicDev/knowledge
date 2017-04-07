@@ -1091,6 +1091,8 @@ Angular 1.5
 
 ### Components
 
+Component is normally build out of `controller` and `template`.
+
 #### Component file
 
 *e.g. avatar.component.js*
@@ -1149,7 +1151,13 @@ Angular 1.5
         ng-style="{'background-image': avatarCtrl.hasAvatar() ? 
                    'url(' + avatarCtrl.url + ')' : 
                    'url(/images/profile-avatar-placeholder.png)'}
-    "></div>
+    ">{{ avatarCtrl.someProperty }}</div>
+
+    // or two way data binding
+    <input type="text" ng-model="avatarCtrl.anotherProperty" />
+
+    // or event handling
+    <button ng-click="avatarCtrl.someFunction()"></button>
 
 ### Lifecycle Hooks
 
@@ -1174,13 +1182,31 @@ initialization work of a controller.
 
 #### \$onChanges()
 
-// TODO
+This hook allows us to react to changes of one-way bindings of a
+component.
+
+In component
+
+        bindings: {
+            user: '<'
+        }
+
+In controller
+
+        this.$onChanges = function(changes) {
+            this.user = changes.user.currentValue;
+        };
 
 #### \$onDestroy()
 
-// TODO
+A hook that is called when its containing scope is **destroyed**. We can
+use this hook to release external resources, watches and event handlers.
 
 #### \$postLink()
+
+// TODO
+
+### Bindings
 
 // TODO
 
