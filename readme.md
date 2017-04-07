@@ -1178,8 +1178,6 @@ initialization work of a controller.
         }
     };
 
-// TODO
-
 #### \$onChanges()
 
 This hook allows us to react to changes of one-way bindings of a
