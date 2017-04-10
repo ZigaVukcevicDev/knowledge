@@ -1235,7 +1235,7 @@ use this hook to release external resources, watches and event handlers.
 
 ### Communicating between components
 
-<img src="/images/angular-1-5-communication-components.png" />
+<img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
 
 #### A single-directional (top-down) data flow
 

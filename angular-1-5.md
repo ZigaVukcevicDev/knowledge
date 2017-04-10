@@ -152,7 +152,7 @@ A hook that is called when its containing scope is __destroyed__. We can use thi
 
 ### Communicating between components
 
-<img src="/images/angular-1-5-communication-components.png" />
+<img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
 
 #### A single-directional (top-down) data flow
 __aka Parent to child__
