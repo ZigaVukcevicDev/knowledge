@@ -122,4 +122,27 @@ A hook that is called when its containing scope is __destroyed__. We can use thi
 
 ### Bindings
 
-// TODO
+```
+    bindings: {
+        user: '<' // For one-way bindings, using expression
+        user: '=' // For two-way binding, using expression
+        title: '@' // For attribute hardcoded value
+        onDelete: '&' // Callbacks for component event 
+    }
+```
+    
+### Communicating between components
+
+Three types of components:
+
+- Presentation (Stateless) component
+    - display user interface
+    - stateless (dumb / pure)
+    - data arrives _via bindings_ (inputs), leaves _via events_ (outputs)
+
+- Business (Stateful) component
+- View (Router) component
+
+#### A single-directional (top-down) data flow
+__aka Parent to child__
+

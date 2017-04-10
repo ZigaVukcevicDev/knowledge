@@ -1206,7 +1206,28 @@ use this hook to release external resources, watches and event handlers.
 
 ### Bindings
 
-// TODO
+        bindings: {
+            user: '<' // For one-way bindings, using expression
+            user: '=' // For two-way binding, using expression
+            title: '@' // For attribute hardcoded value
+            onDelete: '&' // Callbacks for component event 
+        }
+
+### Communicating between components
+
+Three types of components:
+
+-   Presentation (Stateless) component
+    -   display user interface
+    -   stateless (dumb / pure)
+    -   data arrives *via bindings* (inputs), leaves *via
+        events* (outputs)
+-   Business (Stateful) component
+-   View (Router) component
+
+#### A single-directional (top-down) data flow
+
+**aka Parent to child**
 
 Angular 2
 ---------
