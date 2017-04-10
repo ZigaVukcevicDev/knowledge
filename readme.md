@@ -1213,17 +1213,29 @@ use this hook to release external resources, watches and event handlers.
             onDelete: '&' // Callbacks for component event 
         }
 
-### Communicating between components
+### Three types of components
 
-Three types of components:
-
--   Presentation (Stateless) component
+1.  Presentation (Stateless) component
     -   display user interface
     -   stateless (dumb / pure)
-    -   data arrives *via bindings* (inputs), leaves *via
-        events* (outputs)
--   Business (Stateful) component
--   View (Router) component
+    -   data arrives **via bindings** (inputs), leaves **via
+        events** (outputs)
+
+2.  Business (Stateful) component
+    -   access service & state
+    -   stateful (smart / impure / container)
+    -   do not provide interactive user interface
+    -   render other components
+
+3.  View (Router) component
+    -   build the current view (from URL)
+    -   specialist (smart / router) components
+    -   create components dynamically (via a Router)
+    -   can be entry points to the application
+
+### Communicating between components
+
+<img src="/images/angular-1-5-communication-components.png" />
 
 #### A single-directional (top-down) data flow
 
