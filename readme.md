@@ -1178,7 +1178,7 @@ initialization work of a controller.
         }
     };
 
-#### \$onChanges()
+#### \$onChanges(changes)
 
 This hook allows us to react to changes of one-way bindings of a
 component.
@@ -1215,19 +1215,19 @@ use this hook to release external resources, watches and event handlers.
 
 ### Three types of components
 
-1.  Presentation (Stateless) component
+1.  Presentation (stateless) component
     -   display user interface
     -   stateless (dumb / pure)
     -   data arrives **via bindings** (inputs), leaves **via
         events** (outputs)
 
-2.  Business (Stateful) component
+2.  Business (stateful) component
     -   access service & state
     -   stateful (smart / impure / container)
     -   do not provide interactive user interface
     -   render other components
 
-3.  View (Router) component
+3.  View (router) component
     -   build the current view (from URL)
     -   specialist (smart / router) components
     -   create components dynamically (via a Router)
@@ -1236,10 +1236,6 @@ use this hook to release external resources, watches and event handlers.
 ### Communicating between components
 
 <img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
-
-#### A single-directional (top-down) data flow
-
-**aka Parent to child**
 
 Angular 2
 ---------

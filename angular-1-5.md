@@ -92,7 +92,7 @@ This lifecycle hook will be executed when all controllers on an __element have b
 };
 ```
 
-#### $onChanges()
+#### $onChanges(changes)
 
 This hook allows us to react to changes of one-way bindings of a component.
 
@@ -133,18 +133,18 @@ A hook that is called when its containing scope is __destroyed__. We can use thi
 
 ### Three types of components 
     
-1. Presentation (Stateless) component
+1. Presentation (stateless) component
     - display user interface
     - stateless (dumb / pure)
     - data arrives __via bindings__ (inputs), leaves __via events__ (outputs)
 
-2. Business (Stateful) component
+2. Business (stateful) component
     - access service & state
     - stateful (smart / impure / container)
     - do not provide interactive user interface
     - render other components
 
-3. View (Router) component
+3. View (router) component
     - build the current view (from URL)
     - specialist (smart / router) components
     - create components dynamically (via a Router)
@@ -153,7 +153,3 @@ A hook that is called when its containing scope is __destroyed__. We can use thi
 ### Communicating between components
 
 <img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
-
-#### A single-directional (top-down) data flow
-__aka Parent to child__
-
