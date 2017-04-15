@@ -1235,10 +1235,44 @@ use this hook to release external resources, watches and event handlers.
 
 ### Communicating between components
 
-<img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
+<img src="/images/angular-1-5-communication-components.png" />
 
-Angular 2
----------
+### Standard transcludion
+
+It is transplanting DOM nodes into another component.
+
+*View file of controller*
+
+    <modal heading="Here goes some heading">
+        <p>Here goes some content.</p>
+        <p>
+            <a href="#">With some more content.</a>
+        </p>
+    </modal>
+
+*View file of modal component*
+
+    <div>
+        <h2>{{modalCtrl.heading}}</h2>
+        <a href="#" ng-click="modalCtrl.close()">X</a>
+        <div ng-transclude></div> // NOTE: This will output content of modal component 
+    </div>
+
+*Component file*
+
+    bindings: {
+        heading: '@'
+    },
+    controllerAs: modalCtrl,
+    transclude: true,
+
+*Controller file*
+
+    vm.close = function() { ... }
+
+### Multi-Slot transcludion
+
+// TODO \#\# Angular 2
 
 ### Components and directives
 

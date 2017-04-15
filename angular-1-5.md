@@ -152,4 +152,50 @@ A hook that is called when its containing scope is __destroyed__. We can use thi
 
 ### Communicating between components
 
-<img src="/images/angular-1-5-communication-components.png" style="width: 80%" />
+<img src="/images/angular-1-5-communication-components.png" />
+
+### Standard transcludion
+
+It is transplanting DOM nodes into another component.
+
+_View file of controller_ 
+ 
+```
+<modal heading="Here goes some heading">
+    <p>Here goes some content.</p>
+    <p>
+        <a href="#">With some more content.</a>
+    </p>
+</modal>
+```
+
+_View file of modal component_
+
+```
+<div>
+    <h2>{{modalCtrl.heading}}</h2>
+    <a href="#" ng-click="modalCtrl.close()">X</a>
+    <div ng-transclude></div> // NOTE: This will output content of modal component 
+</div>
+```
+
+_Component file_
+
+```
+bindings: {
+    heading: '@'
+},
+controllerAs: modalCtrl,
+transclude: true,
+
+```
+
+_Controller file_ 
+
+```
+vm.close = function() { ... }
+```
+
+### Multi-Slot transcludion
+
+// TODO
